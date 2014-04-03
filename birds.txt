@@ -1,0 +1,1922 @@
+Loading network...
+Loaded in 2.04s
+
+Image: /home/federico/tmp/images/bird/0001.jpg
+Prediction time: 1.07s
+1) 21 0.782 kite
+2) 8 0.039 hen
+3) 85 0.032 quail
+4) 86 0.028 partridge
+5) 22 0.020 bald eagle, American eagle, Haliaeetus leucocephalus
+
+Image: /home/federico/tmp/images/bird/0002.jpg
+Prediction time: 1.00s
+1) 86 0.687 partridge
+2) 82 0.213 ruffed grouse, partridge, Bonasa umbellus
+3) 85 0.040 quail
+4) 91 0.019 coucal
+5) 133 0.017 bittern
+
+Image: /home/federico/tmp/images/bird/0003.jpg
+Prediction time: 1.04s
+1) 21 0.456 kite
+2) 138 0.175 bustard
+3) 24 0.116 great grey owl, great gray owl, Strix nebulosa
+4) 22 0.076 bald eagle, American eagle, Haliaeetus leucocephalus
+5) 23 0.061 vulture
+
+Image: /home/federico/tmp/images/bird/0004.jpg
+Prediction time: 1.00s
+1) 46 0.476 green lizard, Lacerta viridis
+2) 64 0.127 green mamba
+3) 59 0.102 vine snake
+4) 55 0.090 green snake, grass snake
+5) 300 0.075 tiger beetle
+
+Image: /home/federico/tmp/images/bird/0005.jpg
+Prediction time: 0.98s
+1) 14 0.868 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+2) 84 0.076 peacock
+3) 17 0.021 jay
+4) 42 0.018 agama
+5) 92 0.006 bee eater
+
+Image: /home/federico/tmp/images/bird/0006.jpg
+Prediction time: 0.99s
+1) 88 0.499 macaw
+2) 84 0.199 peacock
+3) 21 0.189 kite
+4) 23 0.046 vulture
+5) 138 0.022 bustard
+
+Image: /home/federico/tmp/images/bird/0007.jpg
+Prediction time: 1.00s
+1) 94 0.872 hummingbird
+2) 552 0.014 feather boa, boa
+3) 701 0.011 parachute, chute
+4) 557 0.006 flagpole, flagstaff
+5) 88 0.005 macaw
+
+Image: /home/federico/tmp/images/bird/0008.jpg
+Prediction time: 1.02s
+1) 132 0.976 American egret, great white heron, Egretta albus
+2) 134 0.011 crane
+3) 131 0.005 little blue heron, Egretta caerulea
+4) 129 0.005 spoonbill
+5) 89 0.003 sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+
+Image: /home/federico/tmp/images/bird/0009.jpg
+Prediction time: 1.01s
+1) 90 1.000 lorikeet
+2) 88 0.000 macaw
+3) 91 0.000 coucal
+4) 96 0.000 toucan
+5) 7 0.000 cock
+
+Image: /home/federico/tmp/images/bird/0010.jpg
+Prediction time: 0.95s
+1) 94 0.958 hummingbird
+2) 95 0.034 jacamar
+3) 16 0.007 bulbul
+4) 18 0.000 magpie
+5) 15 0.000 robin, American robin, Turdus migratorius
+
+Image: /home/federico/tmp/images/bird/0011.jpg
+Prediction time: 1.14s
+1) 9 0.999 ostrich, Struthio camelus
+2) 373 0.001 macaque
+3) 23 0.000 vulture
+4) 372 0.000 baboon
+5) 144 0.000 pelican
+
+Image: /home/federico/tmp/images/bird/0012.jpg
+Prediction time: 1.03s
+1) 677 0.381 nail
+2) 20 0.139 water ouzel, dipper
+3) 94 0.132 hummingbird
+4) 16 0.030 bulbul
+5) 92 0.024 bee eater
+
+Image: /home/federico/tmp/images/bird/0013.jpg
+Prediction time: 1.02s
+1) 94 0.352 hummingbird
+2) 10 0.116 brambling, Fringilla montifringilla
+3) 95 0.093 jacamar
+4) 21 0.085 kite
+5) 12 0.077 house finch, linnet, Carpodacus mexicanus
+
+Image: /home/federico/tmp/images/bird/0014.jpg
+Prediction time: 1.02s
+1) 23 0.167 vulture
+2) 22 0.163 bald eagle, American eagle, Haliaeetus leucocephalus
+3) 568 0.130 fur coat
+4) 399 0.082 abaya
+5) 367 0.051 chimpanzee, chimp, Pan troglodytes
+
+Image: /home/federico/tmp/images/bird/0015.jpg
+Prediction time: 1.04s
+1) 90 0.256 lorikeet
+2) 7 0.147 cock
+3) 110 0.074 flatworm, platyhelminth
+4) 8 0.046 hen
+5) 115 0.046 sea slug, nudibranch
+
+Image: /home/federico/tmp/images/bird/0016.jpg
+Prediction time: 1.01s
+1) 14 0.215 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+2) 92 0.208 bee eater
+3) 17 0.155 jay
+4) 94 0.078 hummingbird
+5) 12 0.061 house finch, linnet, Carpodacus mexicanus
+
+Image: /home/federico/tmp/images/bird/0017.jpg
+Prediction time: 0.97s
+1) 94 0.707 hummingbird
+2) 14 0.236 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+3) 95 0.048 jacamar
+4) 84 0.007 peacock
+5) 92 0.001 bee eater
+
+Image: /home/federico/tmp/images/bird/0018.jpg
+Prediction time: 0.98s
+1) 94 0.879 hummingbird
+2) 95 0.113 jacamar
+3) 14 0.004 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+4) 92 0.003 bee eater
+5) 84 0.001 peacock
+
+Image: /home/federico/tmp/images/bird/0019.jpg
+Prediction time: 0.99s
+1) 132 0.802 American egret, great white heron, Egretta albus
+2) 144 0.076 pelican
+3) 134 0.049 crane
+4) 129 0.026 spoonbill
+5) 146 0.018 albatross, mollymawk
+
+Image: /home/federico/tmp/images/bird/0020.jpg
+Prediction time: 0.98s
+1) 643 0.193 mask
+2) 82 0.104 ruffed grouse, partridge, Bonasa umbellus
+3) 584 0.085 hair slide
+4) 15 0.084 robin, American robin, Turdus migratorius
+5) 21 0.065 kite
+
+Image: /home/federico/tmp/images/bird/0021.jpg
+Prediction time: 1.00s
+1) 132 0.739 American egret, great white heron, Egretta albus
+2) 144 0.062 pelican
+3) 134 0.034 crane
+4) 131 0.028 little blue heron, Egretta caerulea
+5) 749 0.019 quill, quill pen
+
+Image: /home/federico/tmp/images/bird/0022.jpg
+Prediction time: 1.02s
+1) 11 0.982 goldfinch, Carduelis carduelis
+2) 92 0.009 bee eater
+3) 89 0.006 sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+4) 22 0.000 bald eagle, American eagle, Haliaeetus leucocephalus
+5) 951 0.000 lemon
+
+Image: /home/federico/tmp/images/bird/0023.jpg
+Prediction time: 0.98s
+1) 90 0.417 lorikeet
+2) 80 0.244 black grouse
+3) 143 0.150 oystercatcher, oyster catcher
+4) 321 0.085 admiral
+5) 96 0.020 toucan
+
+Image: /home/federico/tmp/images/bird/0024.jpg
+Prediction time: 1.05s
+1) 86 0.142 partridge
+2) 16 0.054 bulbul
+3) 82 0.044 ruffed grouse, partridge, Bonasa umbellus
+4) 380 0.042 titi, titi monkey
+5) 105 0.033 koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus
+
+Image: /home/federico/tmp/images/bird/0025.jpg
+Prediction time: 1.01s
+1) 18 0.318 magpie
+2) 94 0.263 hummingbird
+3) 16 0.177 bulbul
+4) 13 0.100 junco, snowbird
+5) 96 0.036 toucan
+
+Image: /home/federico/tmp/images/bird/0026.jpg
+Prediction time: 1.02s
+1) 88 0.998 macaw
+2) 90 0.000 lorikeet
+3) 145 0.000 king penguin, Aptenodytes patagonica
+4) 370 0.000 guenon, guenon monkey
+5) 93 0.000 hornbill
+
+Image: /home/federico/tmp/images/bird/0027.jpg
+Prediction time: 0.97s
+1) 14 0.995 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+2) 320 0.003 damselfly
+3) 319 0.001 dragonfly, darning needle, devil's darning needle, sewing needle, snake feeder, snake doctor, mosquito hawk, skeeter hawk
+4) 326 0.000 lycaenid, lycaenid butterfly
+5) 317 0.000 leafhopper
+
+Image: /home/federico/tmp/images/bird/0028.jpg
+Prediction time: 1.03s
+1) 82 0.319 ruffed grouse, partridge, Bonasa umbellus
+2) 86 0.207 partridge
+3) 85 0.190 quail
+4) 138 0.087 bustard
+5) 21 0.020 kite
+
+Image: /home/federico/tmp/images/bird/0029.jpg
+Prediction time: 1.02s
+1) 159 0.357 Rhodesian ridgeback
+2) 180 0.150 American Staffordshire terrier, Staffordshire terrier, American pit bull terrier, pit bull terrier
+3) 246 0.125 Great Dane
+4) 225 0.095 malinois
+5) 242 0.083 boxer
+
+Image: /home/federico/tmp/images/bird/0030.jpg
+Prediction time: 0.99s
+1) 13 0.576 junco, snowbird
+2) 15 0.249 robin, American robin, Turdus migratorius
+3) 85 0.066 quail
+4) 20 0.058 water ouzel, dipper
+5) 86 0.012 partridge
+
+Image: /home/federico/tmp/images/bird/0031.jpg
+Prediction time: 1.00s
+1) 10 0.793 brambling, Fringilla montifringilla
+2) 95 0.075 jacamar
+3) 15 0.071 robin, American robin, Turdus migratorius
+4) 13 0.014 junco, snowbird
+5) 92 0.010 bee eater
+
+Image: /home/federico/tmp/images/bird/0032.jpg
+Prediction time: 1.03s
+1) 19 0.921 chickadee
+2) 17 0.077 jay
+3) 13 0.003 junco, snowbird
+4) 14 0.000 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+5) 10 0.000 brambling, Fringilla montifringilla
+
+Image: /home/federico/tmp/images/bird/0033.jpg
+Prediction time: 1.03s
+1) 93 0.388 hornbill
+2) 91 0.246 coucal
+3) 135 0.166 limpkin, Aramus pictus
+4) 12 0.064 house finch, linnet, Carpodacus mexicanus
+5) 82 0.063 ruffed grouse, partridge, Bonasa umbellus
+
+Image: /home/federico/tmp/images/bird/0034.jpg
+Prediction time: 1.03s
+1) 11 0.999 goldfinch, Carduelis carduelis
+2) 16 0.000 bulbul
+3) 325 0.000 sulphur butterfly, sulfur butterfly
+4) 94 0.000 hummingbird
+5) 12 0.000 house finch, linnet, Carpodacus mexicanus
+
+Image: /home/federico/tmp/images/bird/0035.jpg
+Prediction time: 0.99s
+1) 14 0.365 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+2) 131 0.243 little blue heron, Egretta caerulea
+3) 17 0.157 jay
+4) 136 0.128 European gallinule, Porphyrio porphyrio
+5) 88 0.078 macaw
+
+Image: /home/federico/tmp/images/bird/0036.jpg
+Prediction time: 0.97s
+1) 13 0.444 junco, snowbird
+2) 16 0.280 bulbul
+3) 20 0.119 water ouzel, dipper
+4) 141 0.038 redshank, Tringa totanus
+5) 12 0.030 house finch, linnet, Carpodacus mexicanus
+
+Image: /home/federico/tmp/images/bird/0037.jpg
+Prediction time: 1.02s
+1) 88 0.253 macaw
+2) 12 0.166 house finch, linnet, Carpodacus mexicanus
+3) 8 0.102 hen
+4) 7 0.054 cock
+5) 989 0.034 hip, rose hip, rosehip
+
+Image: /home/federico/tmp/images/bird/0038.jpg
+Prediction time: 0.97s
+1) 65 0.496 sea snake
+2) 701 0.102 parachute, chute
+3) 795 0.087 ski
+4) 783 0.053 screw
+5) 908 0.042 wing
+
+Image: /home/federico/tmp/images/bird/0039.jpg
+Prediction time: 1.01s
+1) 94 0.690 hummingbird
+2) 92 0.157 bee eater
+3) 95 0.120 jacamar
+4) 14 0.011 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+5) 84 0.003 peacock
+
+Image: /home/federico/tmp/images/bird/0040.jpg
+Prediction time: 1.03s
+1) 144 0.286 pelican
+2) 23 0.210 vulture
+3) 93 0.063 hornbill
+4) 50 0.042 American alligator, Alligator mississipiensis
+5) 99 0.030 goose
+
+Image: /home/federico/tmp/images/bird/0041.jpg
+Prediction time: 1.04s
+1) 10 0.543 brambling, Fringilla montifringilla
+2) 380 0.122 titi, titi monkey
+3) 382 0.119 squirrel monkey, Saimiri sciureus
+4) 11 0.077 goldfinch, Carduelis carduelis
+5) 371 0.027 patas, hussar monkey, Erythrocebus patas
+
+Image: /home/federico/tmp/images/bird/0042.jpg
+Prediction time: 0.97s
+1) 824 0.317 stole
+2) 84 0.101 peacock
+3) 94 0.070 hummingbird
+4) 735 0.046 poncho
+5) 911 0.037 wool, woolen, woollen
+
+Image: /home/federico/tmp/images/bird/0043.jpg
+Prediction time: 0.99s
+1) 81 0.397 ptarmigan
+2) 42 0.102 agama
+3) 82 0.084 ruffed grouse, partridge, Bonasa umbellus
+4) 10 0.056 brambling, Fringilla montifringilla
+5) 310 0.031 ant, emmet, pismire
+
+Image: /home/federico/tmp/images/bird/0044.jpg
+Prediction time: 0.98s
+1) 20 0.528 water ouzel, dipper
+2) 13 0.061 junco, snowbird
+3) 18 0.058 magpie
+4) 16 0.053 bulbul
+5) 85 0.039 quail
+
+Image: /home/federico/tmp/images/bird/0045.jpg
+Prediction time: 0.99s
+1) 91 0.346 coucal
+2) 18 0.109 magpie
+3) 21 0.063 kite
+4) 16 0.055 bulbul
+5) 95 0.047 jacamar
+
+Image: /home/federico/tmp/images/bird/0046.jpg
+Prediction time: 1.00s
+1) 12 0.742 house finch, linnet, Carpodacus mexicanus
+2) 10 0.088 brambling, Fringilla montifringilla
+3) 13 0.060 junco, snowbird
+4) 16 0.056 bulbul
+5) 19 0.023 chickadee
+
+Image: /home/federico/tmp/images/bird/0047.jpg
+Prediction time: 1.00s
+1) 10 0.216 brambling, Fringilla montifringilla
+2) 13 0.208 junco, snowbird
+3) 141 0.163 redshank, Tringa totanus
+4) 139 0.101 ruddy turnstone, Arenaria interpres
+5) 86 0.079 partridge
+
+Image: /home/federico/tmp/images/bird/0048.jpg
+Prediction time: 0.96s
+1) 11 0.969 goldfinch, Carduelis carduelis
+2) 90 0.023 lorikeet
+3) 16 0.007 bulbul
+4) 92 0.000 bee eater
+5) 88 0.000 macaw
+
+Image: /home/federico/tmp/images/bird/0049.jpg
+Prediction time: 1.01s
+1) 14 0.177 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+2) 91 0.169 coucal
+3) 12 0.045 house finch, linnet, Carpodacus mexicanus
+4) 10 0.043 brambling, Fringilla montifringilla
+5) 17 0.042 jay
+
+Image: /home/federico/tmp/images/bird/0050.jpg
+Prediction time: 1.00s
+1) 129 0.292 spoonbill
+2) 132 0.234 American egret, great white heron, Egretta albus
+3) 134 0.211 crane
+4) 131 0.174 little blue heron, Egretta caerulea
+5) 146 0.045 albatross, mollymawk
+
+Image: /home/federico/tmp/images/bird/0051.jpg
+Prediction time: 1.01s
+1) 11 0.932 goldfinch, Carduelis carduelis
+2) 92 0.038 bee eater
+3) 10 0.009 brambling, Fringilla montifringilla
+4) 16 0.008 bulbul
+5) 13 0.004 junco, snowbird
+
+Image: /home/federico/tmp/images/bird/0052.jpg
+Prediction time: 1.00s
+1) 70 0.138 harvestman, daddy longlegs, Phalangium opilio
+2) 479 0.101 car wheel
+3) 396 0.053 lionfish
+4) 309 0.041 bee
+5) 123 0.032 spiny lobster, langouste, rock lobster, crawfish, crayfish, sea crawfish
+
+Image: /home/federico/tmp/images/bird/0053.jpg
+Prediction time: 1.00s
+1) 816 0.144 spindle
+2) 7 0.142 cock
+3) 8 0.084 hen
+4) 154 0.072 Pekinese, Pekingese, Peke
+5) 23 0.070 vulture
+
+Image: /home/federico/tmp/images/bird/0054.jpg
+Prediction time: 0.98s
+1) 16 0.595 bulbul
+2) 91 0.062 coucal
+3) 18 0.048 magpie
+4) 95 0.042 jacamar
+5) 94 0.035 hummingbird
+
+Image: /home/federico/tmp/images/bird/0055.jpg
+Prediction time: 0.98s
+1) 134 0.747 crane
+2) 131 0.119 little blue heron, Egretta caerulea
+3) 132 0.087 American egret, great white heron, Egretta albus
+4) 129 0.018 spoonbill
+5) 133 0.012 bittern
+
+Image: /home/federico/tmp/images/bird/0056.jpg
+Prediction time: 0.99s
+1) 15 1.000 robin, American robin, Turdus migratorius
+2) 91 0.000 coucal
+3) 10 0.000 brambling, Fringilla montifringilla
+4) 86 0.000 partridge
+5) 95 0.000 jacamar
+
+Image: /home/federico/tmp/images/bird/0057.jpg
+Prediction time: 1.01s
+1) 371 0.473 patas, hussar monkey, Erythrocebus patas
+2) 13 0.060 junco, snowbird
+3) 383 0.055 Madagascar cat, ring-tailed lemur, Lemur catta
+4) 286 0.035 cougar, puma, catamount, mountain lion, painter, panther, Felis concolor
+5) 374 0.024 langur
+
+Image: /home/federico/tmp/images/bird/0058.jpg
+Prediction time: 1.00s
+1) 44 0.341 alligator lizard
+2) 114 0.107 slug
+3) 38 0.093 banded gecko
+4) 65 0.065 sea snake
+5) 60 0.057 night snake, Hypsiglena torquata
+
+Image: /home/federico/tmp/images/bird/0059.jpg
+Prediction time: 1.00s
+1) 96 0.900 toucan
+2) 95 0.023 jacamar
+3) 92 0.013 bee eater
+4) 93 0.013 hornbill
+5) 986 0.010 yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+
+Image: /home/federico/tmp/images/bird/0060.jpg
+Prediction time: 1.02s
+1) 710 0.173 pencil sharpener
+2) 301 0.102 ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle
+3) 88 0.068 macaw
+4) 254 0.054 pug, pug-dog
+5) 643 0.037 mask
+
+Image: /home/federico/tmp/images/bird/0061.jpg
+Prediction time: 1.03s
+1) 17 0.959 jay
+2) 131 0.024 little blue heron, Egretta caerulea
+3) 92 0.004 bee eater
+4) 13 0.003 junco, snowbird
+5) 18 0.001 magpie
+
+Image: /home/federico/tmp/images/bird/0062.jpg
+Prediction time: 1.03s
+1) 92 0.999 bee eater
+2) 376 0.001 proboscis monkey, Nasalis larvatus
+3) 91 0.000 coucal
+4) 88 0.000 macaw
+5) 371 0.000 patas, hussar monkey, Erythrocebus patas
+
+Image: /home/federico/tmp/images/bird/0063.jpg
+Prediction time: 1.03s
+1) 140 0.174 red-backed sandpiper, dunlin, Erolia alpina
+2) 12 0.131 house finch, linnet, Carpodacus mexicanus
+3) 10 0.126 brambling, Fringilla montifringilla
+4) 17 0.081 jay
+5) 13 0.070 junco, snowbird
+
+Image: /home/federico/tmp/images/bird/0064.jpg
+Prediction time: 1.01s
+1) 92 0.059 bee eater
+2) 16 0.054 bulbul
+3) 416 0.048 balance beam, beam
+4) 602 0.029 horizontal bar, high bar
+5) 644 0.029 matchstick
+
+Image: /home/federico/tmp/images/bird/0065.jpg
+Prediction time: 1.00s
+1) 96 0.226 toucan
+2) 943 0.179 cucumber, cuke
+3) 939 0.071 zucchini, courgette
+4) 88 0.065 macaw
+5) 90 0.061 lorikeet
+
+Image: /home/federico/tmp/images/bird/0066.jpg
+Prediction time: 1.00s
+1) 94 0.848 hummingbird
+2) 92 0.100 bee eater
+3) 95 0.038 jacamar
+4) 14 0.013 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+5) 136 0.000 European gallinule, Porphyrio porphyrio
+
+Image: /home/federico/tmp/images/bird/0067.jpg
+Prediction time: 1.05s
+1) 134 0.594 crane
+2) 136 0.109 European gallinule, Porphyrio porphyrio
+3) 130 0.068 flamingo
+4) 7 0.045 cock
+5) 129 0.041 spoonbill
+
+Image: /home/federico/tmp/images/bird/0068.jpg
+Prediction time: 0.99s
+1) 133 0.340 bittern
+2) 131 0.128 little blue heron, Egretta caerulea
+3) 23 0.063 vulture
+4) 44 0.048 alligator lizard
+5) 50 0.043 American alligator, Alligator mississipiensis
+
+Image: /home/federico/tmp/images/bird/0069.jpg
+Prediction time: 1.18s
+1) 946 0.457 cardoon
+2) 324 0.092 cabbage butterfly
+3) 94 0.074 hummingbird
+4) 309 0.040 bee
+5) 12 0.036 house finch, linnet, Carpodacus mexicanus
+
+Image: /home/federico/tmp/images/bird/0070.jpg
+Prediction time: 1.07s
+1) 677 0.179 nail
+2) 753 0.065 radiator
+3) 587 0.054 hammer
+4) 299 0.045 meerkat, mierkat
+5) 783 0.031 screw
+
+Image: /home/federico/tmp/images/bird/0071.jpg
+Prediction time: 1.12s
+1) 143 0.418 oystercatcher, oyster catcher
+2) 128 0.336 black stork, Ciconia nigra
+3) 127 0.093 white stork, Ciconia ciconia
+4) 99 0.047 goose
+5) 134 0.044 crane
+
+Image: /home/federico/tmp/images/bird/0072.jpg
+Prediction time: 1.09s
+1) 372 0.586 baboon
+2) 91 0.064 coucal
+3) 93 0.046 hornbill
+4) 145 0.040 king penguin, Aptenodytes patagonica
+5) 18 0.031 magpie
+
+Image: /home/federico/tmp/images/bird/0073.jpg
+Prediction time: 1.03s
+1) 93 0.515 hornbill
+2) 377 0.121 marmoset
+3) 370 0.089 guenon, guenon monkey
+4) 9 0.065 ostrich, Struthio camelus
+5) 380 0.039 titi, titi monkey
+
+Image: /home/federico/tmp/images/bird/0074.jpg
+Prediction time: 1.04s
+1) 337 0.213 beaver
+2) 342 0.062 wild boar, boar, Sus scrofa
+3) 302 0.059 ground beetle, carabid beetle
+4) 34 0.053 leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea
+5) 150 0.042 sea lion
+
+Image: /home/federico/tmp/images/bird/0075.jpg
+Prediction time: 1.13s
+1) 18 0.558 magpie
+2) 16 0.174 bulbul
+3) 92 0.090 bee eater
+4) 95 0.065 jacamar
+5) 94 0.049 hummingbird
+
+Image: /home/federico/tmp/images/bird/0076.jpg
+Prediction time: 1.08s
+1) 11 0.973 goldfinch, Carduelis carduelis
+2) 92 0.006 bee eater
+3) 40 0.004 American chameleon, anole, Anolis carolinensis
+4) 16 0.003 bulbul
+5) 19 0.002 chickadee
+
+Image: /home/federico/tmp/images/bird/0077.jpg
+Prediction time: 1.16s
+1) 132 0.455 American egret, great white heron, Egretta albus
+2) 131 0.347 little blue heron, Egretta caerulea
+3) 89 0.030 sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+4) 17 0.027 jay
+5) 92 0.018 bee eater
+
+Image: /home/federico/tmp/images/bird/0078.jpg
+Prediction time: 1.10s
+1) 19 0.562 chickadee
+2) 18 0.319 magpie
+3) 11 0.042 goldfinch, Carduelis carduelis
+4) 16 0.017 bulbul
+5) 13 0.011 junco, snowbird
+
+Image: /home/federico/tmp/images/bird/0079.jpg
+Prediction time: 1.16s
+1) 8 0.181 hen
+2) 84 0.148 peacock
+3) 21 0.086 kite
+4) 23 0.083 vulture
+5) 39 0.064 common iguana, iguana, Iguana iguana
+
+Image: /home/federico/tmp/images/bird/0080.jpg
+Prediction time: 1.28s
+1) 95 0.909 jacamar
+2) 92 0.086 bee eater
+3) 94 0.004 hummingbird
+4) 133 0.000 bittern
+5) 19 0.000 chickadee
+
+Image: /home/federico/tmp/images/bird/0081.jpg
+Prediction time: 1.32s
+1) 127 0.224 white stork, Ciconia ciconia
+2) 21 0.159 kite
+3) 895 0.107 warplane, military plane
+4) 144 0.067 pelican
+5) 23 0.060 vulture
+
+Image: /home/federico/tmp/images/bird/0082.jpg
+Prediction time: 1.20s
+1) 49 0.377 African crocodile, Nile crocodile, Crocodylus niloticus
+2) 280 0.160 grey fox, gray fox, Urocyon cinereoargenteus
+3) 50 0.057 American alligator, Alligator mississipiensis
+4) 272 0.052 coyote, prairie wolf, brush wolf, Canis latrans
+5) 288 0.037 leopard, Panthera pardus
+
+Image: /home/federico/tmp/images/bird/0083.jpg
+Prediction time: 1.30s
+1) 11 0.933 goldfinch, Carduelis carduelis
+2) 10 0.053 brambling, Fringilla montifringilla
+3) 16 0.005 bulbul
+4) 12 0.004 house finch, linnet, Carpodacus mexicanus
+5) 94 0.002 hummingbird
+
+Image: /home/federico/tmp/images/bird/0084.jpg
+Prediction time: 1.30s
+1) 203 0.081 West Highland white terrier
+2) 791 0.028 shopping cart
+3) 361 0.024 skunk, polecat, wood pussy
+4) 332 0.023 Angora, Angora rabbit
+5) 882 0.023 vacuum, vacuum cleaner
+
+Image: /home/federico/tmp/images/bird/0085.jpg
+Prediction time: 1.38s
+1) 94 0.978 hummingbird
+2) 315 0.005 mantis, mantid
+3) 818 0.001 spotlight, spot
+4) 845 0.001 syringe
+5) 324 0.001 cabbage butterfly
+
+Image: /home/federico/tmp/images/bird/0086.jpg
+Prediction time: 1.33s
+1) 18 0.152 magpie
+2) 17 0.092 jay
+3) 19 0.085 chickadee
+4) 81 0.067 ptarmigan
+5) 375 0.033 colobus, colobus monkey
+
+Image: /home/federico/tmp/images/bird/0087.jpg
+Prediction time: 1.33s
+1) 94 0.892 hummingbird
+2) 95 0.088 jacamar
+3) 92 0.009 bee eater
+4) 16 0.003 bulbul
+5) 14 0.002 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Image: /home/federico/tmp/images/bird/0088.jpg
+Prediction time: 1.16s
+1) 132 0.244 American egret, great white heron, Egretta albus
+2) 21 0.235 kite
+3) 146 0.141 albatross, mollymawk
+4) 144 0.134 pelican
+5) 89 0.057 sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+
+Image: /home/federico/tmp/images/bird/0089.jpg
+Prediction time: 1.18s
+1) 403 0.151 aircraft carrier, carrier, flattop, attack aircraft carrier
+2) 895 0.128 warplane, military plane
+3) 144 0.079 pelican
+4) 913 0.075 wreck
+5) 471 0.037 cannon
+
+Image: /home/federico/tmp/images/bird/0090.jpg
+Prediction time: 1.11s
+1) 989 0.498 hip, rose hip, rosehip
+2) 12 0.292 house finch, linnet, Carpodacus mexicanus
+3) 92 0.113 bee eater
+4) 90 0.079 lorikeet
+5) 96 0.004 toucan
+
+Image: /home/federico/tmp/images/bird/0091.jpg
+Prediction time: 1.13s
+1) 95 1.000 jacamar
+2) 92 0.000 bee eater
+3) 94 0.000 hummingbird
+4) 16 0.000 bulbul
+5) 84 0.000 peacock
+
+Image: /home/federico/tmp/images/bird/0092.jpg
+Prediction time: 1.13s
+1) 140 0.495 red-backed sandpiper, dunlin, Erolia alpina
+2) 139 0.090 ruddy turnstone, Arenaria interpres
+3) 142 0.074 dowitcher
+4) 138 0.037 bustard
+5) 141 0.037 redshank, Tringa totanus
+
+Image: /home/federico/tmp/images/bird/0093.jpg
+Prediction time: 1.10s
+1) 11 0.684 goldfinch, Carduelis carduelis
+2) 90 0.161 lorikeet
+3) 14 0.062 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+4) 12 0.016 house finch, linnet, Carpodacus mexicanus
+5) 86 0.010 partridge
+
+Image: /home/federico/tmp/images/bird/0094.jpg
+Prediction time: 1.39s
+1) 95 0.698 jacamar
+2) 14 0.179 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+3) 92 0.105 bee eater
+4) 94 0.015 hummingbird
+5) 17 0.002 jay
+
+Image: /home/federico/tmp/images/bird/0095.jpg
+Prediction time: 1.37s
+1) 11 0.822 goldfinch, Carduelis carduelis
+2) 10 0.165 brambling, Fringilla montifringilla
+3) 12 0.009 house finch, linnet, Carpodacus mexicanus
+4) 92 0.002 bee eater
+5) 14 0.000 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Image: /home/federico/tmp/images/bird/0096.jpg
+Prediction time: 1.33s
+1) 91 0.338 coucal
+2) 10 0.290 brambling, Fringilla montifringilla
+3) 15 0.263 robin, American robin, Turdus migratorius
+4) 92 0.028 bee eater
+5) 371 0.013 patas, hussar monkey, Erythrocebus patas
+
+Image: /home/federico/tmp/images/bird/0097.jpg
+Prediction time: 1.43s
+1) 92 0.165 bee eater
+2) 10 0.114 brambling, Fringilla montifringilla
+3) 93 0.085 hornbill
+4) 85 0.045 quail
+5) 81 0.044 ptarmigan
+
+Image: /home/federico/tmp/images/bird/0098.jpg
+Prediction time: 1.09s
+1) 14 0.897 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+2) 17 0.071 jay
+3) 91 0.012 coucal
+4) 136 0.011 European gallinule, Porphyrio porphyrio
+5) 92 0.001 bee eater
+
+Image: /home/federico/tmp/images/bird/0099.jpg
+Prediction time: 1.33s
+1) 146 0.796 albatross, mollymawk
+2) 99 0.115 goose
+3) 144 0.034 pelican
+4) 130 0.027 flamingo
+5) 127 0.011 white stork, Ciconia ciconia
+
+Image: /home/federico/tmp/images/bird/0100.jpg
+Prediction time: 1.16s
+1) 91 0.528 coucal
+2) 93 0.209 hornbill
+3) 96 0.043 toucan
+4) 143 0.031 oystercatcher, oyster catcher
+5) 15 0.024 robin, American robin, Turdus migratorius
+
+Image: /home/federico/tmp/images/bird/0101.jpg
+Prediction time: 1.17s
+1) 22 0.982 bald eagle, American eagle, Haliaeetus leucocephalus
+2) 21 0.017 kite
+3) 23 0.001 vulture
+4) 24 0.000 great grey owl, great gray owl, Strix nebulosa
+5) 132 0.000 American egret, great white heron, Egretta albus
+
+Image: /home/federico/tmp/images/bird/0102.jpg
+Prediction time: 1.24s
+1) 364 0.442 three-toed sloth, ai, Bradypus tridactylus
+2) 365 0.115 orangutan, orang, orangutang, Pongo pygmaeus
+3) 381 0.083 spider monkey, Ateles geoffroyi
+4) 23 0.042 vulture
+5) 368 0.023 gibbon, Hylobates lar
+
+Image: /home/federico/tmp/images/bird/0103.jpg
+Prediction time: 1.17s
+1) 14 0.339 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+2) 47 0.278 African chameleon, Chamaeleo chamaeleon
+3) 95 0.117 jacamar
+4) 136 0.111 European gallinule, Porphyrio porphyrio
+5) 31 0.038 tree frog, tree-frog
+
+Image: /home/federico/tmp/images/bird/0104.jpg
+Prediction time: 1.24s
+1) 90 0.377 lorikeet
+2) 12 0.236 house finch, linnet, Carpodacus mexicanus
+3) 88 0.142 macaw
+4) 376 0.083 proboscis monkey, Nasalis larvatus
+5) 380 0.035 titi, titi monkey
+
+Image: /home/federico/tmp/images/bird/0105.jpg
+Prediction time: 1.18s
+1) 17 0.640 jay
+2) 14 0.145 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+3) 18 0.099 magpie
+4) 16 0.067 bulbul
+5) 20 0.016 water ouzel, dipper
+
+Image: /home/federico/tmp/images/bird/0106.jpg
+Prediction time: 1.22s
+1) 134 0.318 crane
+2) 88 0.294 macaw
+3) 1 0.177 goldfish, Carassius auratus
+4) 93 0.031 hornbill
+5) 136 0.024 European gallinule, Porphyrio porphyrio
+
+Image: /home/federico/tmp/images/bird/0107.jpg
+Prediction time: 1.22s
+1) 96 0.192 toucan
+2) 950 0.087 orange
+3) 88 0.079 macaw
+4) 92 0.075 bee eater
+5) 93 0.070 hornbill
+
+Image: /home/federico/tmp/images/bird/0108.jpg
+Prediction time: 1.23s
+1) 92 0.886 bee eater
+2) 88 0.034 macaw
+3) 15 0.031 robin, American robin, Turdus migratorius
+4) 84 0.023 peacock
+5) 95 0.017 jacamar
+
+Image: /home/federico/tmp/images/bird/0109.jpg
+Prediction time: 1.22s
+1) 142 0.811 dowitcher
+2) 140 0.157 red-backed sandpiper, dunlin, Erolia alpina
+3) 353 0.006 gazelle
+4) 134 0.005 crane
+5) 141 0.004 redshank, Tringa totanus
+
+Image: /home/federico/tmp/images/bird/0110.jpg
+Prediction time: 1.20s
+1) 307 0.169 weevil
+2) 77 0.116 wolf spider, hunting spider
+3) 70 0.102 harvestman, daddy longlegs, Phalangium opilio
+4) 303 0.076 long-horned beetle, longicorn, longicorn beetle
+5) 45 0.034 Gila monster, Heloderma suspectum
+
+Image: /home/federico/tmp/images/bird/0111.jpg
+Prediction time: 1.15s
+1) 18 0.404 magpie
+2) 21 0.138 kite
+3) 23 0.074 vulture
+4) 96 0.050 toucan
+5) 91 0.050 coucal
+
+Image: /home/federico/tmp/images/bird/0112.jpg
+Prediction time: 1.19s
+1) 11 0.770 goldfinch, Carduelis carduelis
+2) 19 0.137 chickadee
+3) 16 0.037 bulbul
+4) 18 0.021 magpie
+5) 96 0.012 toucan
+
+Image: /home/federico/tmp/images/bird/0113.jpg
+Prediction time: 1.19s
+1) 83 0.483 prairie chicken, prairie grouse, prairie fowl
+2) 82 0.105 ruffed grouse, partridge, Bonasa umbellus
+3) 86 0.074 partridge
+4) 21 0.066 kite
+5) 80 0.049 black grouse
+
+Image: /home/federico/tmp/images/bird/0496.jpg
+Prediction time: 1.16s
+1) 769 0.437 rule, ruler
+2) 916 0.304 web site, website, internet site, site
+3) 798 0.236 slide rule, slipstick
+4) 549 0.005 envelope
+5) 922 0.002 menu
+
+Image: /home/federico/tmp/images/bird/0497.jpg
+Prediction time: 1.18s
+1) 804 0.093 soap dispenser
+2) 859 0.063 toaster
+3) 728 0.056 plastic bag
+4) 153 0.040 Maltese dog, Maltese terrier, Maltese
+5) 999 0.037 toilet tissue, toilet paper, bathroom tissue
+
+Image: /home/federico/tmp/images/bird/0498.jpg
+Prediction time: 1.20s
+1) 86 0.519 partridge
+2) 13 0.145 junco, snowbird
+3) 82 0.074 ruffed grouse, partridge, Bonasa umbellus
+4) 85 0.052 quail
+5) 80 0.047 black grouse
+
+Image: /home/federico/tmp/images/bird/0499.jpg
+Prediction time: 1.14s
+1) 140 0.151 red-backed sandpiper, dunlin, Erolia alpina
+2) 34 0.139 leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea
+3) 41 0.041 whiptail, whiptail lizard
+4) 114 0.036 slug
+5) 139 0.030 ruddy turnstone, Arenaria interpres
+
+Image: /home/federico/tmp/images/bird/0500.jpg
+Prediction time: 1.12s
+1) 90 0.340 lorikeet
+2) 11 0.319 goldfinch, Carduelis carduelis
+3) 92 0.246 bee eater
+4) 88 0.033 macaw
+5) 95 0.012 jacamar
+
+Image: /home/federico/tmp/images/bird/0501.jpg
+Prediction time: 1.24s
+1) 97 0.268 drake
+2) 36 0.112 terrapin
+3) 98 0.108 red-breasted merganser, Mergus serrator
+4) 142 0.106 dowitcher
+5) 360 0.092 otter
+
+Image: /home/federico/tmp/images/bird/0502.jpg
+Prediction time: 1.29s
+1) 562 0.087 fountain
+2) 135 0.063 limpkin, Aramus pictus
+3) 594 0.061 harp
+4) 50 0.048 American alligator, Alligator mississipiensis
+5) 133 0.042 bittern
+
+Image: /home/federico/tmp/images/bird/0503.jpg
+Prediction time: 1.20s
+1) 321 0.371 admiral
+2) 88 0.197 macaw
+3) 90 0.139 lorikeet
+4) 15 0.067 robin, American robin, Turdus migratorius
+5) 322 0.042 ringlet, ringlet butterfly
+
+Image: /home/federico/tmp/images/bird/0504.jpg
+Prediction time: 1.21s
+1) 21 0.424 kite
+2) 20 0.264 water ouzel, dipper
+3) 80 0.159 black grouse
+4) 10 0.045 brambling, Fringilla montifringilla
+5) 86 0.034 partridge
+
+Image: /home/federico/tmp/images/bird/0505.jpg
+Prediction time: 1.28s
+1) 929 0.079 ice lolly, lolly, lollipop, popsicle
+2) 680 0.052 nipple
+3) 902 0.044 whistle
+4) 652 0.039 military uniform
+5) 87 0.027 African grey, African gray, Psittacus erithacus
+
+Image: /home/federico/tmp/images/bird/0506.jpg
+Prediction time: 1.12s
+1) 12 0.130 house finch, linnet, Carpodacus mexicanus
+2) 94 0.127 hummingbird
+3) 377 0.080 marmoset
+4) 105 0.074 koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus
+5) 16 0.068 bulbul
+
+Image: /home/federico/tmp/images/bird/0507.jpg
+Prediction time: 1.23s
+1) 17 0.811 jay
+2) 18 0.063 magpie
+3) 88 0.027 macaw
+4) 14 0.025 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+5) 23 0.023 vulture
+
+Image: /home/federico/tmp/images/bird/0508.jpg
+Prediction time: 1.17s
+1) 1 0.200 goldfish, Carassius auratus
+2) 88 0.171 macaw
+3) 90 0.097 lorikeet
+4) 94 0.061 hummingbird
+5) 947 0.038 mushroom
+
+Image: /home/federico/tmp/images/bird/0509.jpg
+Prediction time: 1.15s
+1) 129 0.716 spoonbill
+2) 127 0.196 white stork, Ciconia ciconia
+3) 132 0.025 American egret, great white heron, Egretta albus
+4) 134 0.024 crane
+5) 144 0.014 pelican
+
+Image: /home/federico/tmp/images/bird/0510.jpg
+Prediction time: 1.33s
+1) 88 0.608 macaw
+2) 377 0.068 marmoset
+3) 96 0.051 toucan
+4) 90 0.047 lorikeet
+5) 93 0.047 hornbill
+
+Image: /home/federico/tmp/images/bird/0511.jpg
+Prediction time: 1.19s
+1) 83 0.429 prairie chicken, prairie grouse, prairie fowl
+2) 85 0.111 quail
+3) 102 0.106 echidna, spiny anteater, anteater
+4) 80 0.044 black grouse
+5) 82 0.040 ruffed grouse, partridge, Bonasa umbellus
+
+Image: /home/federico/tmp/images/bird/0512.jpg
+Prediction time: 1.30s
+1) 131 0.912 little blue heron, Egretta caerulea
+2) 375 0.020 colobus, colobus monkey
+3) 134 0.017 crane
+4) 132 0.013 American egret, great white heron, Egretta albus
+5) 17 0.013 jay
+
+Image: /home/federico/tmp/images/bird/0513.jpg
+Prediction time: 1.17s
+1) 299 0.378 meerkat, mierkat
+2) 298 0.114 mongoose
+3) 48 0.085 Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis
+4) 382 0.077 squirrel monkey, Saimiri sciureus
+5) 63 0.066 Indian cobra, Naja naja
+
+Image: /home/federico/tmp/images/bird/0514.jpg
+Prediction time: 1.20s
+1) 146 0.601 albatross, mollymawk
+2) 99 0.391 goose
+3) 81 0.004 ptarmigan
+4) 134 0.001 crane
+5) 89 0.001 sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+
+Image: /home/federico/tmp/images/bird/0515.jpg
+Prediction time: 1.18s
+1) 84 0.947 peacock
+2) 643 0.012 mask
+3) 452 0.010 bonnet, poke bonnet
+4) 47 0.004 African chameleon, Chamaeleo chamaeleon
+5) 911 0.003 wool, woolen, woollen
+
+Image: /home/federico/tmp/images/bird/0516.jpg
+Prediction time: 1.21s
+1) 137 0.975 American coot, marsh hen, mud hen, water hen, Fulica americana
+2) 18 0.014 magpie
+3) 136 0.005 European gallinule, Porphyrio porphyrio
+4) 99 0.002 goose
+5) 23 0.001 vulture
+
+Image: /home/federico/tmp/images/bird/0517.jpg
+Prediction time: 1.15s
+1) 13 0.472 junco, snowbird
+2) 16 0.156 bulbul
+3) 19 0.126 chickadee
+4) 94 0.090 hummingbird
+5) 95 0.033 jacamar
+
+Image: /home/federico/tmp/images/bird/0518.jpg
+Prediction time: 1.20s
+1) 18 0.533 magpie
+2) 305 0.052 dung beetle
+3) 522 0.046 croquet ball
+4) 621 0.040 lawn mower, mower
+5) 428 0.024 barrow, garden cart, lawn cart, wheelbarrow
+
+Image: /home/federico/tmp/images/bird/0519.jpg
+Prediction time: 1.22s
+1) 7 0.998 cock
+2) 8 0.002 hen
+3) 134 0.000 crane
+4) 496 0.000 Christmas stocking
+5) 88 0.000 macaw
+
+Image: /home/federico/tmp/images/bird/0520.jpg
+Prediction time: 1.22s
+1) 132 0.291 American egret, great white heron, Egretta albus
+2) 146 0.120 albatross, mollymawk
+3) 81 0.089 ptarmigan
+4) 134 0.085 crane
+5) 144 0.083 pelican
+
+Image: /home/federico/tmp/images/bird/0521.jpg
+Prediction time: 1.13s
+1) 88 1.000 macaw
+2) 89 0.000 sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+3) 93 0.000 hornbill
+4) 90 0.000 lorikeet
+5) 131 0.000 little blue heron, Egretta caerulea
+
+Image: /home/federico/tmp/images/bird/0522.jpg
+Prediction time: 1.12s
+1) 16 0.462 bulbul
+2) 13 0.322 junco, snowbird
+3) 87 0.040 African grey, African gray, Psittacus erithacus
+4) 23 0.038 vulture
+5) 19 0.021 chickadee
+
+Image: /home/federico/tmp/images/bird/0523.jpg
+Prediction time: 1.09s
+1) 146 0.745 albatross, mollymawk
+2) 144 0.209 pelican
+3) 127 0.015 white stork, Ciconia ciconia
+4) 132 0.006 American egret, great white heron, Egretta albus
+5) 148 0.003 killer whale, killer, orca, grampus, sea wolf, Orcinus orca
+
+Image: /home/federico/tmp/images/bird/0524.jpg
+Prediction time: 1.12s
+1) 13 0.487 junco, snowbird
+2) 16 0.416 bulbul
+3) 19 0.042 chickadee
+4) 18 0.018 magpie
+5) 91 0.009 coucal
+
+Image: /home/federico/tmp/images/bird/0525.jpg
+Prediction time: 1.09s
+1) 8 0.323 hen
+2) 7 0.262 cock
+3) 90 0.134 lorikeet
+4) 12 0.100 house finch, linnet, Carpodacus mexicanus
+5) 94 0.052 hummingbird
+
+Image: /home/federico/tmp/images/bird/0526.jpg
+Prediction time: 1.08s
+1) 695 0.083 padlock
+2) 600 0.058 hook, claw
+3) 486 0.049 cello, violoncello
+4) 889 0.048 violin, fiddle
+5) 420 0.045 banjo
+
+Image: /home/federico/tmp/images/bird/0527.jpg
+Prediction time: 1.09s
+1) 130 0.987 flamingo
+2) 129 0.011 spoonbill
+3) 134 0.001 crane
+4) 136 0.000 European gallinule, Porphyrio porphyrio
+5) 100 0.000 black swan, Cygnus atratus
+
+Image: /home/federico/tmp/images/bird/0528.jpg
+Prediction time: 1.05s
+1) 11 0.560 goldfinch, Carduelis carduelis
+2) 92 0.387 bee eater
+3) 40 0.034 American chameleon, anole, Anolis carolinensis
+4) 31 0.006 tree frog, tree-frog
+5) 96 0.005 toucan
+
+Image: /home/federico/tmp/images/bird/0529.jpg
+Prediction time: 1.12s
+1) 18 0.233 magpie
+2) 80 0.142 black grouse
+3) 21 0.119 kite
+4) 128 0.053 black stork, Ciconia nigra
+5) 22 0.045 bald eagle, American eagle, Haliaeetus leucocephalus
+
+Image: /home/federico/tmp/images/bird/0530.jpg
+Prediction time: 1.12s
+1) 21 0.735 kite
+2) 133 0.075 bittern
+3) 86 0.064 partridge
+4) 83 0.033 prairie chicken, prairie grouse, prairie fowl
+5) 10 0.021 brambling, Fringilla montifringilla
+
+Image: /home/federico/tmp/images/bird/0531.jpg
+Prediction time: 1.08s
+1) 146 0.357 albatross, mollymawk
+2) 81 0.199 ptarmigan
+3) 20 0.149 water ouzel, dipper
+4) 99 0.070 goose
+5) 132 0.068 American egret, great white heron, Egretta albus
+
+Image: /home/federico/tmp/images/bird/0532.jpg
+Prediction time: 1.09s
+1) 335 0.221 fox squirrel, eastern fox squirrel, Sciurus niger
+2) 82 0.101 ruffed grouse, partridge, Bonasa umbellus
+3) 85 0.074 quail
+4) 20 0.043 water ouzel, dipper
+5) 334 0.033 porcupine, hedgehog
+
+Image: /home/federico/tmp/images/bird/0533.jpg
+Prediction time: 1.09s
+1) 132 0.510 American egret, great white heron, Egretta albus
+2) 97 0.133 drake
+3) 148 0.120 killer whale, killer, orca, grampus, sea wolf, Orcinus orca
+4) 134 0.082 crane
+5) 99 0.045 goose
+
+Image: /home/federico/tmp/images/bird/0534.jpg
+Prediction time: 1.12s
+1) 73 0.218 barn spider, Araneus cavaticus
+2) 335 0.078 fox squirrel, eastern fox squirrel, Sciurus niger
+3) 373 0.056 macaque
+4) 371 0.051 patas, hussar monkey, Erythrocebus patas
+5) 126 0.048 isopod
+
+Image: /home/federico/tmp/images/bird/0535.jpg
+Prediction time: 1.15s
+1) 23 0.399 vulture
+2) 22 0.175 bald eagle, American eagle, Haliaeetus leucocephalus
+3) 18 0.073 magpie
+4) 21 0.046 kite
+5) 895 0.043 warplane, military plane
+
+Image: /home/federico/tmp/images/bird/0536.jpg
+Prediction time: 1.14s
+1) 10 0.814 brambling, Fringilla montifringilla
+2) 120 0.048 fiddler crab
+3) 139 0.020 ruddy turnstone, Arenaria interpres
+4) 13 0.012 junco, snowbird
+5) 53 0.009 ringneck snake, ring-necked snake, ring snake
+
+Image: /home/federico/tmp/images/bird/0537.jpg
+Prediction time: 1.10s
+1) 15 0.188 robin, American robin, Turdus migratorius
+2) 86 0.158 partridge
+3) 13 0.144 junco, snowbird
+4) 10 0.094 brambling, Fringilla montifringilla
+5) 85 0.093 quail
+
+Image: /home/federico/tmp/images/bird/0538.jpg
+Prediction time: 1.10s
+1) 10 0.567 brambling, Fringilla montifringilla
+2) 13 0.300 junco, snowbird
+3) 139 0.094 ruddy turnstone, Arenaria interpres
+4) 140 0.007 red-backed sandpiper, dunlin, Erolia alpina
+5) 15 0.006 robin, American robin, Turdus migratorius
+
+Image: /home/federico/tmp/images/bird/0539.jpg
+Prediction time: 1.12s
+1) 11 0.670 goldfinch, Carduelis carduelis
+2) 325 0.154 sulphur butterfly, sulfur butterfly
+3) 392 0.143 rock beauty, Holocanthus tricolor
+4) 322 0.013 ringlet, ringlet butterfly
+5) 10 0.010 brambling, Fringilla montifringilla
+
+Image: /home/federico/tmp/images/bird/0540.jpg
+Prediction time: 1.18s
+1) 976 0.250 promontory, headland, head, foreland
+2) 972 0.209 cliff, drop, drop-off
+3) 975 0.074 lakeside, lakeshore
+4) 143 0.065 oystercatcher, oyster catcher
+5) 23 0.048 vulture
+
+Image: /home/federico/tmp/images/bird/0541.jpg
+Prediction time: 1.12s
+1) 957 0.344 pomegranate
+2) 949 0.150 strawberry
+3) 966 0.058 red wine
+4) 572 0.051 goblet
+5) 952 0.047 fig
+
+Image: /home/federico/tmp/images/bird/0542.jpg
+Prediction time: 1.12s
+1) 95 0.636 jacamar
+2) 91 0.306 coucal
+3) 92 0.045 bee eater
+4) 14 0.007 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+5) 376 0.001 proboscis monkey, Nasalis larvatus
+
+Image: /home/federico/tmp/images/bird/0543.jpg
+Prediction time: 1.15s
+1) 94 0.808 hummingbird
+2) 324 0.137 cabbage butterfly
+3) 129 0.035 spoonbill
+4) 985 0.002 daisy
+5) 317 0.002 leafhopper
+
+Image: /home/federico/tmp/images/bird/0544.jpg
+Prediction time: 1.17s
+1) 448 0.277 birdhouse
+2) 458 0.097 brass, memorial tablet, plaque
+3) 919 0.076 street sign
+4) 6 0.045 stingray
+5) 741 0.040 prayer rug, prayer mat
+
+Image: /home/federico/tmp/images/bird/0545.jpg
+Prediction time: 1.15s
+1) 15 0.167 robin, American robin, Turdus migratorius
+2) 234 0.106 Rottweiler
+3) 164 0.096 bluetick
+4) 85 0.069 quail
+5) 13 0.059 junco, snowbird
+
+Image: /home/federico/tmp/images/bird/0546.jpg
+Prediction time: 1.10s
+1) 143 0.405 oystercatcher, oyster catcher
+2) 23 0.180 vulture
+3) 18 0.172 magpie
+4) 80 0.045 black grouse
+5) 128 0.044 black stork, Ciconia nigra
+
+Image: /home/federico/tmp/images/bird/0547.jpg
+Prediction time: 1.08s
+1) 9 0.552 ostrich, Struthio camelus
+2) 128 0.178 black stork, Ciconia nigra
+3) 136 0.107 European gallinule, Porphyrio porphyrio
+4) 127 0.026 white stork, Ciconia ciconia
+5) 134 0.021 crane
+
+Image: /home/federico/tmp/images/bird/0548.jpg
+Prediction time: 1.17s
+1) 13 0.259 junco, snowbird
+2) 10 0.234 brambling, Fringilla montifringilla
+3) 16 0.138 bulbul
+4) 17 0.063 jay
+5) 19 0.053 chickadee
+
+Image: /home/federico/tmp/images/bird/0549.jpg
+Prediction time: 1.22s
+1) 128 0.422 black stork, Ciconia nigra
+2) 146 0.194 albatross, mollymawk
+3) 127 0.105 white stork, Ciconia ciconia
+4) 99 0.101 goose
+5) 134 0.033 crane
+
+Image: /home/federico/tmp/images/bird/0550.jpg
+Prediction time: 1.13s
+1) 81 0.231 ptarmigan
+2) 140 0.193 red-backed sandpiper, dunlin, Erolia alpina
+3) 139 0.181 ruddy turnstone, Arenaria interpres
+4) 146 0.087 albatross, mollymawk
+5) 20 0.068 water ouzel, dipper
+
+Image: /home/federico/tmp/images/bird/0551.jpg
+Prediction time: 1.20s
+1) 11 0.596 goldfinch, Carduelis carduelis
+2) 392 0.059 rock beauty, Holocanthus tricolor
+3) 96 0.042 toucan
+4) 1 0.035 goldfish, Carassius auratus
+5) 90 0.028 lorikeet
+
+Image: /home/federico/tmp/images/bird/0552.jpg
+Prediction time: 1.06s
+1) 94 0.377 hummingbird
+2) 16 0.106 bulbul
+3) 11 0.061 goldfinch, Carduelis carduelis
+4) 20 0.059 water ouzel, dipper
+5) 92 0.056 bee eater
+
+Image: /home/federico/tmp/images/bird/0553.jpg
+Prediction time: 1.19s
+1) 86 0.098 partridge
+2) 10 0.097 brambling, Fringilla montifringilla
+3) 371 0.061 patas, hussar monkey, Erythrocebus patas
+4) 335 0.055 fox squirrel, eastern fox squirrel, Sciurus niger
+5) 382 0.051 squirrel monkey, Saimiri sciureus
+
+Image: /home/federico/tmp/images/bird/0554.jpg
+Prediction time: 1.23s
+1) 20 0.432 water ouzel, dipper
+2) 137 0.190 American coot, marsh hen, mud hen, water hen, Fulica americana
+3) 85 0.118 quail
+4) 15 0.036 robin, American robin, Turdus migratorius
+5) 80 0.030 black grouse
+
+Image: /home/federico/tmp/images/bird/0555.jpg
+Prediction time: 1.13s
+1) 395 0.527 gar, garfish, garpike, billfish, Lepisosteus osseus
+2) 3 0.310 tiger shark, Galeocerdo cuvieri
+3) 4 0.087 hammerhead, hammerhead shark
+4) 2 0.028 great white shark, white shark, man-eater, man-eating shark, Carcharodon carcharias
+5) 394 0.026 sturgeon
+
+Image: /home/federico/tmp/images/bird/0556.jpg
+Prediction time: 1.16s
+1) 24 0.999 great grey owl, great gray owl, Strix nebulosa
+2) 377 0.001 marmoset
+3) 364 0.000 three-toed sloth, ai, Bradypus tridactylus
+4) 82 0.000 ruffed grouse, partridge, Bonasa umbellus
+5) 43 0.000 frilled lizard, Chlamydosaurus kingi
+
+Image: /home/federico/tmp/images/bird/0557.jpg
+Prediction time: 1.09s
+1) 15 0.644 robin, American robin, Turdus migratorius
+2) 16 0.117 bulbul
+3) 92 0.112 bee eater
+4) 91 0.031 coucal
+5) 10 0.029 brambling, Fringilla montifringilla
+
+Image: /home/federico/tmp/images/bird/0558.jpg
+Prediction time: 1.15s
+1) 10 0.707 brambling, Fringilla montifringilla
+2) 15 0.197 robin, American robin, Turdus migratorius
+3) 16 0.044 bulbul
+4) 12 0.018 house finch, linnet, Carpodacus mexicanus
+5) 95 0.014 jacamar
+
+Image: /home/federico/tmp/images/bird/0559.jpg
+Prediction time: 1.14s
+1) 13 0.445 junco, snowbird
+2) 16 0.397 bulbul
+3) 20 0.079 water ouzel, dipper
+4) 10 0.035 brambling, Fringilla montifringilla
+5) 11 0.016 goldfinch, Carduelis carduelis
+
+Image: /home/federico/tmp/images/bird/0560.jpg
+Prediction time: 1.12s
+1) 19 0.979 chickadee
+2) 18 0.014 magpie
+3) 13 0.006 junco, snowbird
+4) 16 0.001 bulbul
+5) 17 0.000 jay
+
+Image: /home/federico/tmp/images/bird/0561.jpg
+Prediction time: 1.26s
+1) 137 0.261 American coot, marsh hen, mud hen, water hen, Fulica americana
+2) 98 0.131 red-breasted merganser, Mergus serrator
+3) 147 0.109 grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus
+4) 360 0.048 otter
+5) 34 0.036 leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea
+
+Image: /home/federico/tmp/images/bird/0562.jpg
+Prediction time: 1.15s
+1) 10 0.325 brambling, Fringilla montifringilla
+2) 81 0.127 ptarmigan
+3) 19 0.071 chickadee
+4) 139 0.068 ruddy turnstone, Arenaria interpres
+5) 140 0.045 red-backed sandpiper, dunlin, Erolia alpina
+
+Image: /home/federico/tmp/images/bird/0563.jpg
+Prediction time: 1.27s
+1) 12 0.547 house finch, linnet, Carpodacus mexicanus
+2) 10 0.199 brambling, Fringilla montifringilla
+3) 86 0.190 partridge
+4) 140 0.017 red-backed sandpiper, dunlin, Erolia alpina
+5) 21 0.009 kite
+
+Image: /home/federico/tmp/images/bird/0564.jpg
+Prediction time: 1.12s
+1) 349 0.170 bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis
+2) 348 0.147 ram, tup
+3) 350 0.134 ibex, Capra ibex
+4) 345 0.092 ox
+5) 23 0.053 vulture
+
+Image: /home/federico/tmp/images/bird/0565.jpg
+Prediction time: 1.15s
+1) 15 0.214 robin, American robin, Turdus migratorius
+2) 94 0.144 hummingbird
+3) 133 0.096 bittern
+4) 12 0.091 house finch, linnet, Carpodacus mexicanus
+5) 43 0.070 frilled lizard, Chlamydosaurus kingi
+
+Image: /home/federico/tmp/images/bird/0566.jpg
+Prediction time: 1.10s
+1) 15 0.363 robin, American robin, Turdus migratorius
+2) 382 0.075 squirrel monkey, Saimiri sciureus
+3) 87 0.073 African grey, African gray, Psittacus erithacus
+4) 21 0.045 kite
+5) 10 0.035 brambling, Fringilla montifringilla
+
+Image: /home/federico/tmp/images/bird/0567.jpg
+Prediction time: 1.08s
+1) 137 0.980 American coot, marsh hen, mud hen, water hen, Fulica americana
+2) 100 0.010 black swan, Cygnus atratus
+3) 136 0.004 European gallinule, Porphyrio porphyrio
+4) 99 0.003 goose
+5) 97 0.001 drake
+
+Image: /home/federico/tmp/images/bird/0568.jpg
+Prediction time: 1.13s
+1) 91 0.122 coucal
+2) 382 0.114 squirrel monkey, Saimiri sciureus
+3) 15 0.109 robin, American robin, Turdus migratorius
+4) 381 0.098 spider monkey, Ateles geoffroyi
+5) 10 0.097 brambling, Fringilla montifringilla
+
+Image: /home/federico/tmp/images/bird/0569.jpg
+Prediction time: 1.09s
+1) 97 0.484 drake
+2) 99 0.240 goose
+3) 98 0.214 red-breasted merganser, Mergus serrator
+4) 128 0.039 black stork, Ciconia nigra
+5) 100 0.004 black swan, Cygnus atratus
+
+Image: /home/federico/tmp/images/bird/0570.jpg
+Prediction time: 1.08s
+1) 684 0.352 ocarina, sweet potato
+2) 64 0.082 green mamba
+3) 404 0.056 airliner
+4) 392 0.040 rock beauty, Holocanthus tricolor
+5) 358 0.028 polecat, fitch, foulmart, foumart, Mustela putorius
+
+Image: /home/federico/tmp/images/bird/0571.jpg
+Prediction time: 1.13s
+1) 13 0.899 junco, snowbird
+2) 19 0.070 chickadee
+3) 10 0.016 brambling, Fringilla montifringilla
+4) 16 0.013 bulbul
+5) 12 0.001 house finch, linnet, Carpodacus mexicanus
+
+Image: /home/federico/tmp/images/bird/0572.jpg
+Prediction time: 1.23s
+1) 30 0.364 bullfrog, Rana catesbeiana
+2) 32 0.105 tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui
+3) 39 0.096 common iguana, iguana, Iguana iguana
+4) 119 0.057 rock crab, Cancer irroratus
+5) 31 0.047 tree frog, tree-frog
+
+Image: /home/federico/tmp/images/bird/0573.jpg
+Prediction time: 1.19s
+1) 157 0.090 papillon
+2) 895 0.053 warplane, military plane
+3) 258 0.052 Samoyed, Samoyede
+4) 232 0.037 Border collie
+5) 264 0.028 Cardigan, Cardigan Welsh corgi
+
+Image: /home/federico/tmp/images/bird/0574.jpg
+Prediction time: 1.33s
+1) 143 0.157 oystercatcher, oyster catcher
+2) 16 0.095 bulbul
+3) 94 0.074 hummingbird
+4) 19 0.071 chickadee
+5) 95 0.066 jacamar
+
+Image: /home/federico/tmp/images/bird/0575.jpg
+Prediction time: 1.19s
+1) 96 0.413 toucan
+2) 95 0.303 jacamar
+3) 94 0.156 hummingbird
+4) 90 0.089 lorikeet
+5) 92 0.012 bee eater
+
+Image: /home/federico/tmp/images/bird/0576.jpg
+Prediction time: 1.12s
+1) 10 0.505 brambling, Fringilla montifringilla
+2) 91 0.122 coucal
+3) 15 0.112 robin, American robin, Turdus migratorius
+4) 12 0.059 house finch, linnet, Carpodacus mexicanus
+5) 21 0.056 kite
+
+Image: /home/federico/tmp/images/bird/0577.jpg
+Prediction time: 1.12s
+1) 316 0.215 cicada, cicala
+2) 15 0.171 robin, American robin, Turdus migratorius
+3) 43 0.106 frilled lizard, Chlamydosaurus kingi
+4) 125 0.093 hermit crab
+5) 126 0.066 isopod
+
+Image: /home/federico/tmp/images/bird/0578.jpg
+Prediction time: 1.24s
+1) 17 0.675 jay
+2) 18 0.092 magpie
+3) 14 0.063 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+4) 16 0.063 bulbul
+5) 19 0.032 chickadee
+
+Image: /home/federico/tmp/images/bird/0579.jpg
+Prediction time: 1.31s
+1) 21 0.240 kite
+2) 10 0.215 brambling, Fringilla montifringilla
+3) 19 0.119 chickadee
+4) 12 0.101 house finch, linnet, Carpodacus mexicanus
+5) 13 0.054 junco, snowbird
+
+Image: /home/federico/tmp/images/bird/0580.jpg
+Prediction time: 1.24s
+1) 10 0.500 brambling, Fringilla montifringilla
+2) 21 0.126 kite
+3) 12 0.073 house finch, linnet, Carpodacus mexicanus
+4) 16 0.068 bulbul
+5) 41 0.043 whiptail, whiptail lizard
+
+Image: /home/federico/tmp/images/bird/0581.jpg
+Prediction time: 1.22s
+1) 10 0.344 brambling, Fringilla montifringilla
+2) 15 0.175 robin, American robin, Turdus migratorius
+3) 95 0.125 jacamar
+4) 91 0.061 coucal
+5) 13 0.055 junco, snowbird
+
+Image: /home/federico/tmp/images/bird/0582.jpg
+Prediction time: 1.21s
+1) 14 0.574 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+2) 136 0.087 European gallinule, Porphyrio porphyrio
+3) 84 0.077 peacock
+4) 88 0.073 macaw
+5) 17 0.051 jay
+
+Image: /home/federico/tmp/images/bird/0583.jpg
+Prediction time: 1.14s
+1) 39 0.168 common iguana, iguana, Iguana iguana
+2) 364 0.093 three-toed sloth, ai, Bradypus tridactylus
+3) 43 0.080 frilled lizard, Chlamydosaurus kingi
+4) 379 0.063 howler monkey, howler
+5) 369 0.057 siamang, Hylobates syndactylus, Symphalangus syndactylus
+
+Image: /home/federico/tmp/images/bird/0584.jpg
+Prediction time: 1.19s
+1) 377 0.323 marmoset
+2) 378 0.108 capuchin, ringtail, Cebus capucinus
+3) 380 0.107 titi, titi monkey
+4) 91 0.062 coucal
+5) 382 0.058 squirrel monkey, Saimiri sciureus
+
+Image: /home/federico/tmp/images/bird/0585.jpg
+Prediction time: 1.16s
+1) 41 0.121 whiptail, whiptail lizard
+2) 138 0.051 bustard
+3) 63 0.041 Indian cobra, Naja naja
+4) 42 0.035 agama
+5) 58 0.030 water snake
+
+Image: /home/federico/tmp/images/bird/0586.jpg
+Prediction time: 1.13s
+1) 120 0.672 fiddler crab
+2) 119 0.069 rock crab, Cancer irroratus
+3) 27 0.040 eft
+4) 80 0.026 black grouse
+5) 91 0.016 coucal
+
+Image: /home/federico/tmp/images/bird/0587.jpg
+Prediction time: 1.14s
+1) 17 0.433 jay
+2) 81 0.202 ptarmigan
+3) 146 0.061 albatross, mollymawk
+4) 16 0.044 bulbul
+5) 142 0.029 dowitcher
+
+Image: /home/federico/tmp/images/bird/0588.jpg
+Prediction time: 1.06s
+1) 146 0.306 albatross, mollymawk
+2) 131 0.105 little blue heron, Egretta caerulea
+3) 99 0.084 goose
+4) 144 0.076 pelican
+5) 21 0.072 kite
+
+Image: /home/federico/tmp/images/bird/0589.jpg
+Prediction time: 1.15s
+1) 93 0.387 hornbill
+2) 18 0.177 magpie
+3) 85 0.141 quail
+4) 91 0.091 coucal
+5) 92 0.060 bee eater
+
+Image: /home/federico/tmp/images/bird/0590.jpg
+Prediction time: 1.17s
+1) 15 0.492 robin, American robin, Turdus migratorius
+2) 90 0.276 lorikeet
+3) 91 0.075 coucal
+4) 92 0.046 bee eater
+5) 95 0.043 jacamar
+
+Image: /home/federico/tmp/images/bird/0591.jpg
+Prediction time: 1.17s
+1) 36 0.381 terrapin
+2) 120 0.086 fiddler crab
+3) 35 0.045 mud turtle
+4) 57 0.044 garter snake, grass snake
+5) 361 0.043 skunk, polecat, wood pussy
+
+Image: /home/federico/tmp/images/bird/0592.jpg
+Prediction time: 1.09s
+1) 382 0.305 squirrel monkey, Saimiri sciureus
+2) 39 0.119 common iguana, iguana, Iguana iguana
+3) 955 0.115 jackfruit, jak, jack
+4) 11 0.096 goldfinch, Carduelis carduelis
+5) 325 0.087 sulphur butterfly, sulfur butterfly
+
+Image: /home/federico/tmp/images/bird/0593.jpg
+Prediction time: 1.07s
+1) 15 0.615 robin, American robin, Turdus migratorius
+2) 133 0.080 bittern
+3) 10 0.031 brambling, Fringilla montifringilla
+4) 350 0.029 ibex, Capra ibex
+5) 85 0.028 quail
+
+Image: /home/federico/tmp/images/bird/0594.jpg
+Prediction time: 1.18s
+1) 11 0.368 goldfinch, Carduelis carduelis
+2) 88 0.166 macaw
+3) 90 0.148 lorikeet
+4) 96 0.072 toucan
+5) 392 0.041 rock beauty, Holocanthus tricolor
+
+Image: /home/federico/tmp/images/bird/0595.jpg
+Prediction time: 1.11s
+1) 669 0.366 mosquito net
+2) 516 0.052 cradle
+3) 42 0.046 agama
+4) 39 0.037 common iguana, iguana, Iguana iguana
+5) 840 0.029 swab, swob, mop
+
+Image: /home/federico/tmp/images/bird/0596.jpg
+Prediction time: 1.09s
+1) 7 0.763 cock
+2) 428 0.114 barrow, garden cart, lawn cart, wheelbarrow
+3) 8 0.012 hen
+4) 830 0.007 stretcher
+5) 88 0.003 macaw
+
+Image: /home/federico/tmp/images/bird/0597.jpg
+Prediction time: 1.17s
+1) 10 0.310 brambling, Fringilla montifringilla
+2) 91 0.103 coucal
+3) 11 0.074 goldfinch, Carduelis carduelis
+4) 21 0.063 kite
+5) 13 0.047 junco, snowbird
+
+Image: /home/federico/tmp/images/bird/0598.jpg
+Prediction time: 1.10s
+1) 146 0.303 albatross, mollymawk
+2) 128 0.189 black stork, Ciconia nigra
+3) 127 0.098 white stork, Ciconia ciconia
+4) 129 0.065 spoonbill
+5) 644 0.061 matchstick
+
+Image: /home/federico/tmp/images/bird/0599.jpg
+Prediction time: 1.21s
+1) 18 0.835 magpie
+2) 17 0.077 jay
+3) 131 0.032 little blue heron, Egretta caerulea
+4) 14 0.021 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+5) 91 0.009 coucal
+
+Image: /home/federico/tmp/images/bird/0600.jpg
+Prediction time: 1.21s
+1) 21 0.244 kite
+2) 43 0.103 frilled lizard, Chlamydosaurus kingi
+3) 82 0.081 ruffed grouse, partridge, Bonasa umbellus
+4) 39 0.062 common iguana, iguana, Iguana iguana
+5) 47 0.048 African chameleon, Chamaeleo chamaeleon
+
+Image: /home/federico/tmp/images/bird/0601.jpg
+Prediction time: 1.15s
+1) 21 0.473 kite
+2) 128 0.299 black stork, Ciconia nigra
+3) 146 0.067 albatross, mollymawk
+4) 22 0.050 bald eagle, American eagle, Haliaeetus leucocephalus
+5) 127 0.047 white stork, Ciconia ciconia
+
+Image: /home/federico/tmp/images/bird/0602.jpg
+Prediction time: 1.08s
+1) 138 0.536 bustard
+2) 134 0.239 crane
+3) 131 0.149 little blue heron, Egretta caerulea
+4) 132 0.035 American egret, great white heron, Egretta albus
+5) 133 0.006 bittern
+
+Image: /home/federico/tmp/images/bird/0603.jpg
+Prediction time: 1.11s
+1) 377 0.582 marmoset
+2) 380 0.177 titi, titi monkey
+3) 382 0.049 squirrel monkey, Saimiri sciureus
+4) 21 0.039 kite
+5) 370 0.022 guenon, guenon monkey
+
+Image: /home/federico/tmp/images/bird/0604.jpg
+Prediction time: 1.17s
+1) 16 0.457 bulbul
+2) 13 0.255 junco, snowbird
+3) 12 0.237 house finch, linnet, Carpodacus mexicanus
+4) 20 0.011 water ouzel, dipper
+5) 23 0.010 vulture
+
+Image: /home/federico/tmp/images/bird/0605.jpg
+Prediction time: 1.13s
+1) 326 0.214 lycaenid, lycaenid butterfly
+2) 325 0.173 sulphur butterfly, sulfur butterfly
+3) 94 0.095 hummingbird
+4) 988 0.080 acorn
+5) 311 0.050 grasshopper, hopper
+
+Image: /home/federico/tmp/images/bird/0606.jpg
+Prediction time: 1.07s
+1) 13 0.517 junco, snowbird
+2) 15 0.210 robin, American robin, Turdus migratorius
+3) 10 0.062 brambling, Fringilla montifringilla
+4) 12 0.036 house finch, linnet, Carpodacus mexicanus
+5) 85 0.035 quail
+
+Image: /home/federico/tmp/images/bird/0607.jpg
+Prediction time: 1.16s
+1) 964 0.258 potpie
+2) 965 0.222 burrito
+3) 928 0.218 ice cream, icecream
+4) 923 0.029 plate
+5) 969 0.029 eggnog
+
+Image: /home/federico/tmp/images/bird/0608.jpg
+Prediction time: 1.25s
+1) 49 0.612 African crocodile, Nile crocodile, Crocodylus niloticus
+2) 50 0.086 American alligator, Alligator mississipiensis
+3) 36 0.042 terrapin
+4) 285 0.036 Egyptian cat
+5) 43 0.032 frilled lizard, Chlamydosaurus kingi
+
+Image: /home/federico/tmp/images/bird/0609.jpg
+Prediction time: 1.26s
+1) 21 0.482 kite
+2) 17 0.231 jay
+3) 89 0.149 sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+4) 146 0.040 albatross, mollymawk
+5) 14 0.026 indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Image: /home/federico/tmp/images/bird/0610.jpg
+Prediction time: 1.18s
+1) 11 0.553 goldfinch, Carduelis carduelis
+2) 10 0.353 brambling, Fringilla montifringilla
+3) 20 0.047 water ouzel, dipper
+4) 83 0.009 prairie chicken, prairie grouse, prairie fowl
+5) 94 0.006 hummingbird
+
+Image: /home/federico/tmp/images/bird/0611.jpg
+Prediction time: 1.13s
+1) 88 0.385 macaw
+2) 89 0.276 sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+3) 11 0.061 goldfinch, Carduelis carduelis
+4) 90 0.029 lorikeet
+5) 17 0.027 jay
+
+Image: /home/federico/tmp/images/bird/0612.jpg
+Prediction time: 1.04s
+1) 20 0.692 water ouzel, dipper
+2) 16 0.096 bulbul
+3) 21 0.052 kite
+4) 94 0.027 hummingbird
+5) 10 0.026 brambling, Fringilla montifringilla
+
+Image: /home/federico/tmp/images/bird/0613.jpg
+Prediction time: 1.15s
+1) 11 0.554 goldfinch, Carduelis carduelis
+2) 10 0.429 brambling, Fringilla montifringilla
+3) 16 0.010 bulbul
+4) 13 0.004 junco, snowbird
+5) 91 0.001 coucal
+
+Image: /home/federico/tmp/images/bird/0614.jpg
+Prediction time: 1.15s
+1) 10 0.962 brambling, Fringilla montifringilla
+2) 11 0.007 goldfinch, Carduelis carduelis
+3) 86 0.006 partridge
+4) 12 0.006 house finch, linnet, Carpodacus mexicanus
+5) 15 0.005 robin, American robin, Turdus migratorius
+
+Image: /home/federico/tmp/images/bird/0615.jpg
+Prediction time: 1.11s
+1) 10 0.959 brambling, Fringilla montifringilla
+2) 15 0.023 robin, American robin, Turdus migratorius
+3) 13 0.007 junco, snowbird
+4) 12 0.001 house finch, linnet, Carpodacus mexicanus
+5) 11 0.001 goldfinch, Carduelis carduelis
+
+Image: /home/federico/tmp/images/bird/0616.jpg
+Prediction time: 1.16s
+1) 16 0.468 bulbul
+2) 12 0.127 house finch, linnet, Carpodacus mexicanus
+3) 13 0.070 junco, snowbird
+4) 20 0.051 water ouzel, dipper
+5) 95 0.031 jacamar
+
+Image: /home/federico/tmp/images/bird/0617.jpg
+Prediction time: 1.14s
+1) 83 0.131 prairie chicken, prairie grouse, prairie fowl
+2) 306 0.106 rhinoceros beetle
+3) 210 0.084 German short-haired pointer
+4) 16 0.055 bulbul
+5) 80 0.032 black grouse
+
+Image: /home/federico/tmp/images/bird/0618.jpg
+Prediction time: 1.10s
+1) 382 0.276 squirrel monkey, Saimiri sciureus
+2) 86 0.048 partridge
+3) 381 0.040 spider monkey, Ateles geoffroyi
+4) 384 0.032 indri, indris, Indri indri, Indri brevicaudatus
+5) 105 0.031 koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus
+
+Image: /home/federico/tmp/images/bird/0619.jpg
+Prediction time: 1.19s
+1) 94 0.196 hummingbird
+2) 21 0.191 kite
+3) 23 0.051 vulture
+4) 364 0.043 three-toed sloth, ai, Bradypus tridactylus
+5) 18 0.041 magpie
+
+Image: /home/federico/tmp/images/bird/0620.jpg
+Prediction time: 1.13s
+1) 92 0.310 bee eater
+2) 95 0.255 jacamar
+3) 11 0.130 goldfinch, Carduelis carduelis
+4) 10 0.093 brambling, Fringilla montifringilla
+5) 59 0.028 vine snake
+
+Image: /home/federico/tmp/images/bird/0621.jpg
+Prediction time: 1.08s
+1) 134 0.721 crane
+2) 264 0.054 Cardigan, Cardigan Welsh corgi
+3) 341 0.021 hog, pig, grunter, squealer, Sus scrofa
+4) 263 0.020 Pembroke, Pembroke Welsh corgi
+5) 353 0.019 gazelle
+
+Image: /home/federico/tmp/images/bird/0622.jpg
+Prediction time: 1.11s
+1) 134 0.998 crane
+2) 93 0.001 hornbill
+3) 96 0.000 toucan
+4) 127 0.000 white stork, Ciconia ciconia
+5) 23 0.000 vulture
