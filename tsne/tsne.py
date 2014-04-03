@@ -40,8 +40,8 @@ def x2p(X = Math.array([]), tol = 1e-5, perplexity = 30.0):
     for i in range(n):
 
         # Print progress
-        if i % 500 == 0:
-            print "Computing P-values for point ", i, " of ", n, "..."
+        #if i % 500 == 0:
+        print "Computing P-values for point ", i, " of ", n, "..."
 
         # Compute the Gaussian kernel and entropy for the current precision
         betamin = -Math.inf;
@@ -86,13 +86,17 @@ def pca(X = Math.array([]), no_dims = 50):
 
     print "Preprocessing the data using PCA..."
     (n, d) = X.shape;
+    print "1"
     X = X - Math.tile(Math.mean(X, 0), (n, 1));
+    print "2"
     (l, M) = Math.linalg.eig(Math.dot(X.T, X));
+    print "3"
     Y = Math.dot(X, M[:,0:no_dims]);
+    print "DONE"
     return Y;
 
 
-def tsne(X = Math.array([]), no_dims = 2, initial_dims = 50, perplexity = 30.0):
+def tsne(X = Math.array([]), no_dims = 2, initial_dims = 50, perplexity = 30.0, max_iter=300):
     """Runs t-SNE on the dataset in the NxD array X to reduce its dimensionality to no_dims dimensions.
     The syntaxis of the function is Y = tsne.tsne(X, no_dims, perplexity), where X is an NxD NumPy array."""
 
@@ -107,7 +111,7 @@ def tsne(X = Math.array([]), no_dims = 2, initial_dims = 50, perplexity = 30.0):
     # Initialize variables
     X = pca(X, initial_dims);
     (n, d) = X.shape;
-    max_iter = 500;
+    #max_iter = 100;
     initial_momentum = 0.5;
     final_momentum = 0.8;
     eta = 500;
@@ -166,8 +170,17 @@ def tsne(X = Math.array([]), no_dims = 2, initial_dims = 50, perplexity = 30.0):
 if __name__ == "__main__":
     print "Run Y = tsne.tsne(X, no_dims, perplexity) to perform t-SNE on your dataset."
     print "Running example on 2,500 MNIST digits..."
-    X = Math.loadtxt("mnist2500_X.txt");
-    labels = Math.loadtxt("mnist2500_labels.txt");
-    Y = tsne(X, 2, 50, 20.0);
-    Plot.scatter(Y[:,0], Y[:,1], 20, labels);
+    #X = Math.loadtxt("mnist2500_X.txt");
+    #labels = Math.loadtxt("mnist2500_labels.txt");
+    X1 = Math.loadtxt("300_18/imagenet_features");
+    labels = Math.loadtxt("300_18/imagenet_labels");
+    #X1 = Math.loadtxt("../fff");
+    #labels = Math.loadtxt("../fff_l");
+    X = Math.array([[n/100 for n in x] for x in X1])
+    #Y = tsne(X, 2, 50, 20.0);
+    Y = tsne(X, 2, 1000, 20.0, 5000);
+    Plot.scatter(Y[:,0][0:99], Y[:,1][0:99], 20, labels, color='b', label="dog");
+    Plot.scatter(Y[:,0][99:198], Y[:,1][99:198], 20, labels, color='r', label="cat");
+    Plot.scatter(Y[:,0][198:297], Y[:,1][198:297], 20, labels, color='g', label="bird");
+    Plot.legend(loc=0, scatterpoints = 1)
     Plot.show()

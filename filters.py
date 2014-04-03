@@ -50,7 +50,7 @@ def print_blobs(blobs):
         print "Blob %2d: num:%2d channels:%4d width:%3d height:%3d count:%s"%\
         (i, blobs[i].num, blobs[i].channels, blobs[i].width, blobs[i].height, blobs[i].count)
 
-net = load_network('../models/imagenet.prototxt', '../models/caffe_reference_imagenet_model')
+net = load_network('/home/federico/tmp/caffe/models/imagenet.prototxt','/home/federico/tmp/caffe/models/caffe_reference_imagenet_model')
 set_mode(net, 'cpu')
 
 net.caffenet.set_phase_test()
