@@ -1,4 +1,4 @@
-with open("features_cat", 'w') as outfile:
+with open("features_lamp", 'w') as outfile:
     for vector in conv_features:
         line = "   "
         for num in vector:

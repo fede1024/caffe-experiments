@@ -58,7 +58,7 @@ with open(SYNSET) as f:
 def get_conv_features(net):
     feat = []
     blobs = net.caffenet.blobs()
-    blob = blobs[18].data[4]
+    blob = blobs[14].data[4]
     for channel in blob:
         for width in channel:
             for height in width:
@@ -77,7 +77,7 @@ for IMAGE_FILE in sys.argv[1:]:
     print "Prediction time: %.2fs"%(time.time() - start)
     #pyplot.plot(prediction)
 
-    #conv_features.append(get_conv_features(net))
+    conv_features.append(get_conv_features(net))
 
     #blobs = net.caffenet.blobs()
     #image = [None] * len(blobs)
