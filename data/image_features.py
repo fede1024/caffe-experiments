@@ -60,7 +60,7 @@ features_count = 0
 with open(out_path, 'w+') as out:
     for image_name, feature_list in images.items():
         features_count += len(feature_list)
-        out_str = image_name + " ".join(feature_list) + "\n"
+        out_str = image_name + " " + " ".join(feature_list) + "\n"
         out.write(out_str)
 
 with open(out_path + "_py", 'w+') as out:

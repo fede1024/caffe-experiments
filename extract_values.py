@@ -84,7 +84,8 @@ for image_path in images:
 
     for layer in layers:
         # TODO spiegare usare 4
-        line = image_name + " " + str(net.caffenet.blobs[layer].data[0].flatten().tolist())
+        numbers = net.caffenet.blobs[layer].data[0].flatten().tolist()
+        line = image_name + ": " + ", ".join(["%.3f"%n for n in numbers])
         layer_files[layer].write(line)
 
     count += 1
