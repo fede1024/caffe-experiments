@@ -36,6 +36,8 @@ def load_network(model, network):
     print "Loading network..."
     start = time.time()
     net = caffe.imagenet.ImageNetClassifier(model, network)
+    #net = caffe.imagenet.ImageNetClassifier(model, network, num_output=256)
+    #net = caffe.imagenet.ImageNetClassifier(model, network, center_only=True)
     print "Loaded in %.2fs"%(time.time() - start)
     return net
 
@@ -46,22 +48,24 @@ def set_mode(net, mode):
         net.caffenet.set_mode_gpu()
 
 def print_blobs(blobs):
-    for i in xrange(len(blobs)):
-        print "Blob %2d: num:%2d channels:%4d width:%3d height:%3d count:%s"%\
-        (i, blobs[i].num, blobs[i].channels, blobs[i].width, blobs[i].height, blobs[i].count)
+    for key in blobs:
+        print "Blob %5s: num:%2d channels:%4d width:%3d height:%3d count:%s"%\
+        (key, blobs[key].num, blobs[key].channels, blobs[key].width, blobs[key].height, blobs[key].count)
 
-net = load_network('/home/federico/tmp/caffe/models/imagenet.prototxt','/home/federico/tmp/caffe/models/caffe_reference_imagenet_model')
+net = load_network('/home/federico/tmp/caffe/examples/imagenet/imagenet_deploy.prototxt', '/home/federico/tmp/caffe/examples/imagenet/caffe_reference_imagenet_model')
+#net = load_network('/home/federico/tmp/caffe/models/my_imagenet.prototxt', '/home/federico/tmp/caffe/models/caffe_reference_imagenet_model')
 set_mode(net, 'cpu')
 
 net.caffenet.set_phase_test()
 
-scores = net.predict("/home/federico/tmp/images/lena.bmp")
+#scores = net.predict("/home/federico/tmp/images/lena.bmp")
+scores = net.predict(sys.argv[1])
 
 #print scores
 
 #[(k, v.data.shape) for k, v in net.caffenet.blobs.items()]
 
-blobs = net.caffenet.blobs()
+blobs = net.caffenet.blobs
 print_blobs(blobs)
 
 plt.rcParams['figure.figsize'] = (10, 10)
@@ -91,9 +95,14 @@ def vis_square(data, padsize=1, padval=0):
 
     showimage(data)
 
+
+# 4 central one
+# 9 central one mirrored
+image_no = 4
+
 # The input image
 # index four is the center crop
-image = net.caffenet.blobs()[0].data[4].copy()
+image = net.caffenet.blobs['data'].data[image_no].copy()
 image -= image.min()
 image /= image.max()
 showimage(image.transpose(1, 2, 0))
@@ -102,13 +111,13 @@ plt.show()
 
 # The first layer filters, conv1
 # the parameters are a list of [weights, biases]
-filters = net.caffenet.params()[0].data
+filters = net.caffenet.params['conv1'][0].data
 vis_square(filters.transpose(0, 2, 3, 1))
 plt.show()
 
 # The first layer output, conv1 (rectified responses of the filters above,
 # first 36 only)
-filters = net.caffenet.blobs()[1].data[0, :36]
+filters = net.caffenet.blobs['conv1'].data[0, :36]
 vis_square(filters, padval=1)
 plt.show()
 
@@ -116,8 +125,32 @@ plt.show()
 # There are 128 filters, each of which has dimension 5 x 5 x 48.
 # We show only the first 48 filters, with each channel shown separately,
 # so that each filter is a row.
-filters = net.caffenet.params()[2].data
-vis_square(filters[:48].reshape(48**2, 5, 5))
+#filters = net.caffenet.params['conv2'][0].data
+#vis_square(filters[:48].reshape(48**2, 5, 5))
+#plt.show()
+
+filters = net.caffenet.blobs['conv5'].data[image_no, :255]
+vis_square(filters, padval=1)
 plt.show()
 
+#v = [[0 for x in xrange(0, 13)] for j in xrange(0, 13)]
+v = np.zeros((13, 13))
 
+m = 0
+for x in xrange(0, 13):
+    for y in xrange(0, 13):
+        s = 0
+        for filter_n in xrange(0, 255):
+            s += net.caffenet.blobs['conv5'].data[image_no][filter_n][x][y]
+        m = max(s, m)
+        v[x][y] = s
+
+for x in xrange(0, 13):
+    for y in xrange(0, 13):
+        v[x][y] /= m
+
+showimage(v)
+plt.show()
+
+showimage(net.caffenet.blobs['conv5'].data[image_no][240])
+plt.show()

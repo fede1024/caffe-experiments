@@ -12,6 +12,7 @@
 
 import numpy as Math
 import pylab as Plot
+from mpl_toolkits.mplot3d import Axes3D
 
 def Hbeta(D = Math.array([]), beta = 1.0):
     """Compute the perplexity and the P-row for a specific value of the precision of a Gaussian distribution."""
@@ -40,8 +41,8 @@ def x2p(X = Math.array([]), tol = 1e-5, perplexity = 30.0):
     for i in range(n):
 
         # Print progress
-        #if i % 500 == 0:
-        print "Computing P-values for point ", i, " of ", n, "..."
+        if i % 500 == 0:
+            print "Computing P-values for point ", i, " of ", n, "..."
 
         # Compute the Gaussian kernel and entropy for the current precision
         betamin = -Math.inf;
@@ -169,18 +170,29 @@ def tsne(X = Math.array([]), no_dims = 2, PCA_dims = None, perplexity = 30.0, ma
 
 
 if __name__ == "__main__":
-    print "Run Y = tsne.tsne(X, no_dims, perplexity) to perform t-SNE on your dataset."
-    print "Running example on 2,500 MNIST digits..."
+    #print "Run Y = tsne.tsne(X, no_dims, perplexity) to perform t-SNE on your dataset."
+    #print "Running example on 2,500 MNIST digits..."
     #X = Math.loadtxt("mnist2500_X.txt");
     #labels = Math.loadtxt("mnist2500_labels.txt");
+    print "Loading file"
     X1 = Math.loadtxt("all_14/imagenet_features");
     #labels = Math.loadtxt("400_14/imagenet_labels");
-    X = Math.array([[n/100 for n in x] for x in X1])
+    #X = Math.array([[n/100 for n in x] for x in X1[0:1705]])
+    print "Resizing values"
+    X = X1/100
     #Y = tsne(X, 2, 50, 20.0);
+    print "Running tsne"
     Y = tsne(X, 2, perplexity=20.0, max_iter=400);
-    Plot.scatter(Y[:,0][0:386], Y[:,1][0:386], 20, [1]*386, color='b', label="dog");
-    Plot.scatter(Y[:,0][386:1465], Y[:,1][386:1465], 20, [2]*1079, color='r', label="cat");
-    Plot.scatter(Y[:,0][1465:1705], Y[:,1][1465:1705], 20, [3]*240, color='g', label="bird");
-    Plot.scatter(Y[:,0][1705:2931], Y[:,1][1705:2931], 20, [4]*1226, color='y', label="lamp");
+    #labels = Math.array([Math.float64(1)]*386 + [Math.float64(2)]*1079 + [Math.float64(3)]*240 + [Math.float64(4)]*1226)
+    #fig = Plot.figure()
+    #ax = fig.add_subplot(111, projection='3d')
+    #ax.scatter(Y[:,0][0:99], Y[:,1][0:99], Y[:,2][0:99], color='b', label="dog");
+    #ax.scatter(Y[:,0][99:189], Y[:,1][99:189], Y[:,2][99:189], color='r', label="cat");
+    #ax.scatter(Y[:,0][189:297], Y[:,1][189:297], Y[:,2][189:297], color='g', label="bird");
+    labels = Math.array([Math.float64(1)]*386 + [Math.float64(2)]*1079 + [Math.float64(3)]*240 + [Math.float64(4)]*1226)
+    Plot.scatter(Y[:,0][0:386], Y[:,1][0:386], 20, color='b', label="dog", alpha=0.5);
+    Plot.scatter(Y[:,0][386:1465], Y[:,1][386:1465], 20, color='r', label="cat", alpha=0.5);
+    Plot.scatter(Y[:,0][1465:1705], Y[:,1][1465:1705], 20, color='g', label="bird", alpha=0.5);
+    Plot.scatter(Y[:,0][1705:2931], Y[:,1][1705:2931], 20, color='y', label="lamp", alpha=0.5);
     Plot.legend(loc=0, scatterpoints = 1)
     Plot.show()

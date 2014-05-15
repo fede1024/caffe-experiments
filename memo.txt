@@ -1,4 +1,37 @@
+Se usi center_only devi modificare input dimension da 10 a 1. Mettere nella relazione!
+
+
 net.caffenet.blobs()   =>  19  ???
+
+
+> [(k, v.data.shape) for k, v in net.caffenet.blobs.items()]
+[('data', (10, 3, 227, 227)),
+ ('conv1', (10, 96, 55, 55)),
+ ('pool1', (10, 96, 27, 27)),
+ ('norm1', (10, 96, 27, 27)),
+ ('conv2', (10, 256, 27, 27)),
+ ('pool2', (10, 256, 13, 13)),
+ ('norm2', (10, 256, 13, 13)),
+ ('conv3', (10, 384, 13, 13)),
+ ('conv4', (10, 384, 13, 13)),
+ ('conv5', (10, 256, 13, 13)),
+ ('pool5', (10, 256, 6, 6)),
+ ('fc6', (10, 4096, 1, 1)),
+ ('fc7', (10, 4096, 1, 1)),
+ ('fc8', (10, 1000, 1, 1)),
+ ('prob', (10, 1000, 1, 1))]
+
+
+> [(k, v[0].data.shape) for k, v in net.caffenet.params.items()]
+[('conv1', (96, 3, 11, 11)),
+ ('conv2', (256, 48, 5, 5)),
+ ('conv3', (384, 256, 3, 3)),
+ ('conv4', (384, 192, 3, 3)),
+ ('conv5', (256, 192, 3, 3)),
+ ('fc6', (1, 1, 4096, 9216)),
+ ('fc7', (1, 1, 4096, 4096)),
+ ('fc8', (1, 1, 1000, 4096))]
+
 
 BLOB 0
 net.caffenet.blobs()[0].data          =>  10   input images (5 + reflections) 
@@ -78,45 +111,55 @@ array([  0.        ,   0.        ,   6.62164927,   2.81036592,
         50.85917282,   0.        ,   0.        ], dtype=float32)
 
 # DATA
-Blob  0: num:10 channels:   3 width:227 height:227 count:1545870
-Blob  1: num:10 channels:  96 width: 55 height: 55 count:2904000
-Blob  2: num:10 channels:  96 width: 27 height: 27 count:699840
-Blob  3: num:10 channels:  96 width: 27 height: 27 count:699840
-Blob  4: num:10 channels:  96 width: 31 height: 31 count:922560
-Blob  5: num:10 channels: 256 width: 27 height: 27 count:1866240
-Blob  6: num:10 channels: 256 width: 13 height: 13 count:432640
-Blob  7: num:10 channels: 256 width: 13 height: 13 count:432640
-Blob  8: num:10 channels: 256 width: 15 height: 15 count:576000
-Blob  9: num:10 channels: 384 width: 13 height: 13 count:648960
-Blob 10: num:10 channels: 384 width: 15 height: 15 count:864000
-Blob 11: num:10 channels: 384 width: 13 height: 13 count:648960
-Blob 12: num:10 channels: 384 width: 15 height: 15 count:864000
-Blob 13: num:10 channels: 256 width: 13 height: 13 count:432640
-Blob 14: num:10 channels: 256 width:  6 height:  6 count:92160
-Blob 15: num:10 channels:4096 width:  1 height:  1 count:40960
-Blob 16: num:10 channels:4096 width:  1 height:  1 count:40960
-Blob 17: num:10 channels:1000 width:  1 height:  1 count:10000
-Blob 18: num:10 channels:1000 width:  1 height:  1 count:10000
+Blob  0: num:10 width:227 height:227 channels:   3 count:1545870
+Blob  1: num:10 width: 55 height: 55 channels:  96 count:2904000
+Blob  2: num:10 width: 27 height: 27 channels:  96 count:699840
+Blob  3: num:10 width: 27 height: 27 channels:  96 count:699840
+Blob  4: num:10 width: 31 height: 31 channels:  96 count:922560
+Blob  5: num:10 width: 27 height: 27 channels: 256 count:1866240
+Blob  6: num:10 width: 13 height: 13 channels: 256 count:432640
+Blob  7: num:10 width: 13 height: 13 channels: 256 count:432640
+Blob  8: num:10 width: 15 height: 15 channels: 256 count:576000
+Blob  9: num:10 width: 13 height: 13 channels: 384 count:648960
+Blob 10: num:10 width: 15 height: 15 channels: 384 count:864000
+Blob 11: num:10 width: 13 height: 13 channels: 384 count:648960
+Blob 12: num:10 width: 15 height: 15 channels: 384 count:864000
+Blob 13: num:10 width: 13 height: 13 channels: 256 count:432640
+Blob 14: num:10 width:  6 height:  6 channels: 256 count:92160
+Blob 15: num:10 width:  1 height:  1 channels:4096 count:40960
+Blob 16: num:10 width:  1 height:  1 channels:4096 count:40960
+Blob 17: num:10 width:  1 height:  1 channels:1000 count:10000
+Blob 18: num:10 width:  1 height:  1 channels:1000 count:10000
 
 # PARAMETERS
 # First convolutional layer filters the 227x227x3 input image with 96
-# kernels of size 11x11x3 with a stride of 4
-Blob  0: num:96  channels:   3 width: 11  height: 11 count:34848
-Blob  1: num: 1  channels:   1 width: 96  height:  1 count:96
-Blob  2: num:256 channels:  48 width:  5  height:  5 count:307200
-Blob  3: num: 1  channels:   1 width:256  height:  1 count:256
-Blob  4: num:384 channels: 256 width:  3  height:  3 count:884736
-Blob  5: num: 1  channels:   1 width:384  height:  1 count:384
-Blob  6: num:384 channels: 192 width:  3  height:  3 count:663552
-Blob  7: num: 1  channels:   1 width:384  height:  1 count:384
-Blob  8: num:256 channels: 192 width:  3  height:  3 count:442368
-Blob  9: num: 1  channels:   1 width:256  height:  1 count:256
-Blob 10: num: 1  channels:   1 width:9216 height:4096 count:37748736
-Blob 11: num: 1  channels:   1 width:4096 height:  1 count:4096
-Blob 12: num: 1  channels:   1 width:4096 height:4096 count:16777216
-Blob 13: num: 1  channels:   1 width:4096 height:  1 count:4096
-Blob 14: num: 1  channels:   1 width:4096 height:1000 count:4096000
-Blob 15: num: 1  channels:   1 width:1000 height:  1 count:1000
+# kernels of size 11x11x3 with a stride of 4.
+Blob  0: num:96  width: 11  height: 11 channels:   3 count:34848
+Blob  1: num: 1  width: 96  height:  1 channels:   1 count:96
+
+# Second convolutional layes takes as input the output of the first conv.
+# layer and filters it with 256 kernels of size 5x5x48. POOLING 96 -> 48
+Blob  2: num:256 width:  5  height:  5 channels:  48 count:307200
+Blob  3: num: 1  width:256  height:  1 channels:   1 count:256
+
+# The thirds conv. layer has 384 kernels of size 3x3x256 connected
+# to the (normalized, pooled) outputs of the second conv. layer. POOLING 384 -> 192
+Blob  4: num:384 width:  3  height:  3 channels: 256 count:884736
+Blob  5: num: 1  width:384  height:  1 channels:   1 count:384
+
+# The fourth conv. layer has 384 kernels of size 3x3x192. POOLING 384 -> 192
+Blob  6: num:384 width:  3  height:  3 channels: 192 count:663552
+Blob  7: num: 1  width:384  height:  1 channels:   1 count:384
+
+# The fifth conv. layer has 256 kernels of size 3x3x192.
+Blob  8: num:256 width:  3  height:  3  channels: 192 count:442368
+Blob  9: num: 1  width:256  height:  1  channels:   1 count:256
+Blob 10: num: 1  width:9216 height:4096 channels:   1 count:37748736
+Blob 11: num: 1  width:4096 height:  1  channels:   1 count:4096
+Blob 12: num: 1  width:4096 height:4096 channels:   1 count:16777216
+Blob 13: num: 1  width:4096 height:  1  channels:   1 count:4096
+Blob 14: num: 1  width:4096 height:1000 channels:   1 count:4096000
+Blob 15: num: 1  width:1000 height:  1  channels:   1 count:1000
 
 
 
