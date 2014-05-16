@@ -11,10 +11,10 @@
 # Only positive (P) annotation are used. Images that don't appear in any
 # annotation file are ignored.
 #
-# Usage: image_features.py ann_folder output_file
+# Usage: image_features.py -p ann_folder output_file
 #
-# Another file called output_file_py is created, with output in python
-# data structure.
+# With -p the output will be a python structure, with -t a formatted text will
+# be created.
 #
 
 from __future__ import division
@@ -23,15 +23,15 @@ import pprint
 from os import listdir
 from os.path import isfile, join
 
-if len(sys.argv) < 3:
-    print "Usage: %s ann_folder output_file"%(sys.argv[0])
+if len(sys.argv) < 4:
+    print "Usage: %s -p|-t ann_folder output_file"%(sys.argv[0])
     sys.exit(1)
 
 def list_files(path):
     return [f for f in listdir(path) if isfile(join(path,f)) ]
 
-dir_path = sys.argv[1]
-out_path = sys.argv[2]
+dir_path = sys.argv[2]
+out_path = sys.argv[3]
 
 images = {}
 images_all = set()
@@ -55,20 +55,26 @@ for annotation_file in files_list:
 print "\nWriting output on %s and %s_py..."%(out_path, out_path),
 sys.stdout.flush()
 
-features_count = 0
-
-with open(out_path, 'w+') as out:
-    for image_name, feature_list in images.items():
-        features_count += len(feature_list)
-        out_str = image_name + " " + " ".join(feature_list) + "\n"
-        out.write(out_str)
-
-with open(out_path + "_py", 'w+') as out:
-    pp = pprint.PrettyPrinter()
-    out.write("# Data structure in python format\n\n")
-    out.write(pp.pformat(images))
+if sys.argv[1] == "-t":
+    with open(out_path, 'w+') as out:
+        for image_name, feature_list in images.items():
+            features_count += len(feature_list)
+            out_str = image_name + " " + " ".join(feature_list) + "\n"
+            out.write(out_str)
+elif sys.argv[1] == "-p":
+    with open(out_path, 'w+') as out:
+        pp = pprint.PrettyPrinter()
+        out.write("# Data structure in python format\n\n")
+        out.write(pp.pformat(images))
+else:
+    print "Wrong parameter. Choose -p or -t."
+    sys.exit(1)
 
 print "DONE"
+
+features_count = 0
+for image_name, feature_list in images.items():
+    features_count += len(feature_list)
 
 print "\nStatistics:"
 print "  Annotations:", len(files_list)

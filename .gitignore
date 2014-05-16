@@ -4,5 +4,8 @@ cats_dump
 dogs_dump
 birds_dump
 data/data
+data/aa_reduced
 output
+libsvm-3.18
+plibsvm-3.18
 

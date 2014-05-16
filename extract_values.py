@@ -14,6 +14,11 @@ sys.path.append(CAFFE)
 from caffe import imagenet
 #from matplotlib import pyplot
 import time
+from os import listdir
+from os.path import isfile, join
+
+def list_files(path):
+    return [f for f in listdir(path) if isfile(join(path,f)) ]
 
 # Set the right path to your model file and pretrained model
 #MODEL_FILE = '/home/federico/tmp/caffe/examples/imagenet/imagenet_deploy.prototxt'
@@ -22,8 +27,8 @@ PRETRAINED = '/home/federico/tmp/caffe/examples/imagenet/caffe_reference_imagene
 
 MODE = 'cpu'
 
-if len(sys.argv) < 2:
-    sys.exit('Usage: %s layer_name1 layer_name2 ... output_folder' % sys.argv[0])
+if len(sys.argv) < 3:
+    sys.exit('Usage: %s layer_name1 layer_name2 ... input_folder output_folder' % sys.argv[0])
 
 if not os.path.exists(MODEL_FILE):
     sys.exit('ERROR: Model file %s was not found!' % MODEL_FILE)
@@ -31,7 +36,8 @@ if not os.path.exists(MODEL_FILE):
 if not os.path.exists(PRETRAINED):
     sys.exit('ERROR: Trained network %s was not found!' % PRETRAINED)
 
-layers = sys.argv[1:-1]
+layers = sys.argv[1:-2]
+input_folder = sys.argv[len(sys.argv)-2]
 output_folder = sys.argv[len(sys.argv)-1]
 
 if not os.path.isdir(output_folder):
@@ -44,7 +50,7 @@ start = time.time()
 # dimension in the prototxt file must be 1 instead of 10
 #net = imagenet.ImageNetClassifier(MODEL_FILE, PRETRAINED)
 net = imagenet.ImageNetClassifier(MODEL_FILE, PRETRAINED, center_only=True)
-print "Network loaded in in %.2fs\n\n"%(time.time() - start)
+print "Network loaded in in %.2fs\n"%(time.time() - start)
 
 net.caffenet.set_phase_test()
 
@@ -53,7 +59,7 @@ if MODE == 'cpu':
 else:
     net.caffenet.set_mode_gpu()
 
-images = [path.rstrip() for path in sys.stdin]
+images = [join(input_folder, f) for f in list_files(input_folder)]
 images_num = len(images)
 
 print "Extracting data for layers %s:"%layers
@@ -68,24 +74,25 @@ for layer in layers:
         print "  Layer %s does not exist. Layers:"%(layer), net.caffenet.blobs.keys()
         exit()
 
+print "\nStarting image elaboration:"
+
 count = 1
 
 for image_path in images:
-    print "%3d%%\tImage: %s"%(count/images_num*100, image_path),
+    image_name, ext = os.path.basename(image_path).split(".")
     sys.stdout.flush()
+
     if not os.path.exists(image_path):
         sys.exit('ERROR: Image %s was not found!' % image_path)
 
     start = time.time()
     prediction = net.predict(image_path)
-    print "%.2fs"%(time.time() - start)
-
-    image_name, ext = os.path.basename(image_path).split(".")
+    print "%3d%%\tImage: %s %.2fs"%(count/images_num*100, image_name, time.time() - start)
 
     for layer in layers:
         # TODO spiegare usare 4
         numbers = net.caffenet.blobs[layer].data[0].flatten().tolist()
-        line = image_name + ": " + ", ".join(["%.3f"%n for n in numbers])
+        line = image_name + " " + " ".join(["0" if n == 0 else "%.3f"%n for n in numbers]) + "\n"
         layer_files[layer].write(line)
 
     count += 1
@@ -93,3 +100,4 @@ for image_path in images:
 for layer_file in layer_files.values():
     layer_file.close()
 
+print "\nDONE"
