@@ -1,17 +1,25 @@
-data (master)$ ./image_features.py data/ann out
 => 3_Or_More_People
-...
 => Aborigines
+=> Actor
+=> Address_Or_Speech
+=> Administrative_Assistant
+=> Adobehouses
+...
+=> Weather
+=> Weather_Map
+=> Whale
+=> Wheelchair
+=> White_House
 => Wild_Animal
 => Windows
 => Windy
 => Yasser_Arafat
 
-Writing output on out and out_py... DONE
+Writing output on data/labels and data/labels_py... DONE
 
 Statistics:
   Annotations: 500
   Total images: 237991
   Images with annotations: 120660 (50%)
   Average annotations per image: 3.6
-
+  Number of labels combinations: 25606

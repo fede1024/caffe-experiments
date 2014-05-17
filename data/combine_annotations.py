@@ -73,11 +73,14 @@ else:
 print "DONE"
 
 features_count = 0
+features_combinations = set()
 for image_name, feature_list in images.items():
     features_count += len(feature_list)
+    features_combinations.add(tuple(feature_list))
 
 print "\nStatistics:"
 print "  Annotations:", len(files_list)
 print "  Total images:", len(images_all)
 print "  Images with annotations: %d (%d%%)"%(len(images), len(images)/len(images_all)*100)
 print "  Average annotations per image: %.1f"%(features_count/len(images))
+print "  Number of labels combinations:", len(features_combinations)
