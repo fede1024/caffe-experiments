@@ -17,8 +17,8 @@ if len(sys.argv) < 4:
 
 # If true, it keeps only the most frequent lable among the database, giving a
 # single label per image.
-KEEP_ONE = False
-#KEEP_ONE = True
+#KEEP_ONE = False
+KEEP_ONE = True
 
 print "Opening labels file."
 

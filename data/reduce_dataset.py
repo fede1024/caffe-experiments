@@ -3,9 +3,12 @@
 from __future__ import division
 import sys
 import pprint
+import random
 from os import listdir
 from os.path import isdir, isfile, join
 import shutil
+
+KEEP=0.5
 
 if len(sys.argv) < 4:
     print "Usage: %s ann_folder input_dataset output_Dataset "%(sys.argv[0])
@@ -50,18 +53,21 @@ sys.stdout.flush()
 
 # Some images may not exist (for example if we split our dataset in training
 # and testing parts and then we reduce only one of the two).
-not_found = 0
+found_c = 0
 
 for img in images:
     try:
-        shutil.copyfile(join(in_path, img + ".jpg"), join(out_path, img + ".jpg"))
+        if random.random() < KEEP:	
+            shutil.copyfile(join(in_path, img + ".jpg"), join(out_path, img + ".jpg"))
+            found_c += 1
     except IOError:
-        not_found += 1
+        pass
 
 print "DONE"
 
 print "\nStatistics:"
 print "  Total images in annotations:", len(images_all)
 print "  Positive labels:", len(images)
-print "  Images found:", len(images)-not_found
+print "  Keep ratio:", KEEP
+print "  Images found and copied:", found_c
 
