@@ -37,6 +37,8 @@ images = {}
 images_all = set()
 files_list = sorted(list_files(dir_path))
 
+labels = {}
+
 for annotation_file in files_list:
     annotation_name, ext = annotation_file.split(".")
     if ext != "ann":
@@ -51,6 +53,7 @@ for annotation_file in files_list:
             feature_list = images.get(image_name, [])
             feature_list.append(annotation_name)
             images[image_name] = feature_list
+            labels[annotation_name] = 1
 
 print "\nWriting output on %s and %s_py..."%(out_path, out_path),
 sys.stdout.flush()
@@ -65,12 +68,15 @@ elif sys.argv[1] == "-p":
     with open(out_path, 'w+') as out:
         pp = pprint.PrettyPrinter()
         out.write("# Data structure in python format\n\n")
-        out.write(pp.pformat(images))
+        out.write(pp.pformat(images) + "\n\n")
+        for n, l in enumerate(sorted(list(labels))):
+            out.write("#" + str(n+1) + " " + l + "\n")
 else:
     print "Wrong parameter. Choose -p or -t."
     sys.exit(1)
 
 print "DONE"
+
 
 features_count = 0
 features_combinations = set()

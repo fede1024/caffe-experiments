@@ -1,3 +1,12 @@
+./plibsvm-3.18/svm-train data/abc_reduced/test_pool5_dataset data/abc_reduced/module_default
+# one day
+fede@tesla:~/project$ time ./plibsvm-3.18/svm-predict data/abc_reduced/test_pool5_dataset data/abc_reduced/module_default tmp_output
+Accuracy = 99.1573% (22474/22665) (classification)
+
+real    86m26.201s
+user    129m45.767s
+sys     0m3.648s
+
 Se usi center_only devi modificare input dimension da 10 a 1. Mettere nella relazione!
 
 
