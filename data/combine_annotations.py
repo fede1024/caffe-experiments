@@ -55,7 +55,7 @@ for annotation_file in files_list:
             images[image_name] = feature_list
             labels[annotation_name] = 1
 
-print "\nWriting output on %s and %s_py..."%(out_path, out_path),
+print "\nWriting output on %s..."%(out_path),
 sys.stdout.flush()
 
 if sys.argv[1] == "-t":
@@ -82,7 +82,7 @@ features_count = 0
 features_combinations = set()
 for image_name, feature_list in images.items():
     features_count += len(feature_list)
-    features_combinations.add(tuple(feature_list))
+    features_combinations.add(tuple(sorted(feature_list)))
 
 print "\nStatistics:"
 print "  Annotations:", len(files_list)

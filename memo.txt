@@ -7,6 +7,14 @@ real    86m26.201s
 user    129m45.767s
 sys     0m3.648s
 
+LIBLINEAR su abc:
+ * s1: 8 min training, 27.1% accurat test, 99.6 sul train
+ * s0: 15 min, 31.4%, 99.9%
+ * s2: 5 min, 29.1%
+ * s3: 8 min, 27.1%
+
+
+
 Se usi center_only devi modificare input dimension da 10 a 1. Mettere nella relazione!
 
 
