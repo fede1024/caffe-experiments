@@ -1,0 +1,349 @@
+on ABC:
+
+
+****************************************************************************************
+
+fede@tesla:~/project$ time ./plibsvm-3.18/svm-train -m 4000 -t 1 -e 0.1 data/abc_reduced/train_pool5_dataset data/abc_reduced/model_t0_e01
+
+Total nSV = 24041
+
+real    88m0.957s
+user    347m6.549s
+sys     0m8.354s
+f@tesla:~/project$ time ./plibsvm-3.18/svm-predict data/abc_reduced/test_pool5_dataset data/abc_reduced/model_t0_e01 tmp_output
+Accuracy = 33.8495% (7672/22665) (classification)
+
+real    36m38.206s
+user    143m18.332s
+sys     0m1.400s
+
+****************************************************************************************
+ 
+fede@tesla:~/project$ time ./plibsvm-3.18/svm-train -m 4000 -t 0 data/abc_reduced/train_pool5_dataset data/abc_reduced/model_t0
+real    42m22.104s
+user    165m34.136s
+sys     0m4.347s
+fede@tesla:~/project$ time ./plibsvm-3.18/svm-predict data/abc_reduced/test_pool5_dataset d
+ata/abc_reduced/model_t0 tmp_output
+model_t0      model_t0_e01
+fede@tesla:~/project$ time ./plibsvm-3.18/svm-predict data/abc_reduced/test_pool5_dataset data/abc_reduced/model_t0 tmp_output
+Accuracy = 34.1407% (7738/22665) (classification)
+
+real    34m3.633s
+user    132m21.182s
+sys     0m1.184s
+
+****************************************************************************************
+
+time ./plibsvm-3.18/svm-train -m 4000 -t 0 -e 0.1 data/abc_reduced/train_pool5_dataset data/abc_reduced/model_t0_e01
+fede@tesla:~/project$ time ./plibsvm-3.18/svm-predict data/abc_reduced/test_pool5_dataset data/ab
+c_reduced/model_t0_e01 tmp_output
+Accuracy = 34.1054% (7730/22665) (classification)
+
+real    33m10.433s
+user    129m9.086s
+sys     0m13.382s
+
+*****************************************************************************************
+ON AB:
+
+fede@tesla:~/project$ time ./plibsvm-3.18/svm-train -m 4000 -t 2 -c 32768 -g 0.001953125 data/ab_
+reduced/train_pool5_dataset data/ab_reduced/model_best
+
+Total nSV = 8856
+
+real    40m0.044s
+user    158m50.876s
+sys     0m3.231s
+
+time ./plibsvm-3.18/svm-predict data/ab_reduced/test_pool5_dataset data/ab_
+reduced/model_best tmp_output
+Accuracy = 19.0889% (1320/6915) (classification)
+
+real    4m12.578s
+user    16m33.776s
+sys     0m0.220s
+
+********************************************************************************************
+
+fede@tesla:~/project$ time ./plibsvm-3.18/svm-train -m 4000 data/ab_reduced/train_pool5_dataset d
+ata/ab_reduced/model_default
+...
+optimization finished, #iter = 30
+nu = 0.683954
+obj = -5.111504, rho = -0.444461
+nSV = 13, nBSV = 3
+Total nSV = 8957
+
+real    39m7.526s
+user    155m23.587s
+sys     0m3.219s
+fede@tesla:~/project$
+fede@tesla:~/project$ ./plibsvm-3.18/svm-predict data/ab_reduced/test_pool5_dataset data/ab_reduc
+ed/model_default tmp_output
+Accuracy = 19.1468% (1324/6915) (classification)
+fede@tesla:~/project$ ./plibsvm-3.18/svm-predict data/ab_reduced/train_pool5_dataset data/ab_redu
+ced/model_default tmp_output
+Accuracy = 99.8219% (8967/8983) (classification)
+
+
+***************************************************************************************+++++++
+
+fede@tesla:~/project$ time ./plibsvm-3.18/svm-train -m 4000 -t 0 data/ab_reduced/train_pool5_dataset data/ab_reduced/model_t0
+real    5m49.204s
+user    22m32.938s
+sys     0m0.668s
+fede@tesla:~/project$ ./plibsvm-3.18/svm-predict data/ab_reduced/test_pool5_dataset data/ab_reduced/model_t0 tmp_output
+Accuracy = 44.4685% (3075/6915) (classification)
+fede@tesla:~/project$ ./plibsvm-3.18/svm-predict data/ab_reduced/train_pool5_dataset data/ab_redu
+ced/model_t0 tmp_output
+Accuracy = 99.8664% (8971/8983) (classification)
+
+***************************************************************************************+++++++
+
+fede@tesla:~/project$ time ./plibsvm-3.18/svm-train -m 4000 -t 1 data/ab_reduced/train_pool5_dataset data/ab_reduced/model_t1
+real    15m32.608s
+user    61m13.957s
+sys     0m1.699s
+fede@tesla:~/project$ ./plibsvm-3.18/svm-predict data/ab_reduced/test_pool5_dataset data/ab_reduc
+ed/model_t1 tmp_output
+Accuracy = 40.7809% (2820/6915) (classification)
+
+***************************************************************************************+++++++
+
+fede@tesla:~/project$ time ./plibsvm-3.18/svm-train -m 4000 -t 3 data/ab_reduced/train_pool5_dataset data/ab_reduced/model_t3
+real    5m31.770s
+user    21m26.450s
+sys     0m0.687s
+fede@tesla:~/project$ ./plibsvm-3.18/svm-predict data/ab_reduced/test_pool5_dataset data/ab_reduced/model_t tmp_output
+model_t0  model_t1  model_t3
+fede@tesla:~/project$ ./plibsvm-3.18/svm-predict data/ab_reduced/test_pool5_dataset data/ab_reduced/model_t3 tmp_output
+Accuracy = 19.0889% (1320/6915) (classification)
+
+***************************************************************************************+++++++
+
+##0-lhoste$ time ./svm-train -v 5 -t 0 -e 0.1 /tmp/giraudf/train_pool5_B_adult /tmp/giraudf/model_B_adult_e01_v5_t0
+## Cross Validation Accuracy = 78.5038%
+## 
+## real    30m51.304s
+## user    61m23.983s
+## sys     0m2.114s
+## 
+
+0-iwak$ time ./svm-train -t 0 -e 0.1 /tmp/giraudf/train_pool5_dataset_B_Adult /tmp/giraudf/model
+_B_adult_e01_t0
+..........*...............*
+optimization finished, #iter = 25854
+nu = 0.001340
+obj = -12.021081, rho = 1.285065
+nSV = 3457, nBSV = 8
+Total nSV = 3457
+
+real    16m54.601s
+user    33m23.640s
+sys     0m1.931s
+0-iwak$ ls /tmp/giraudf/
+model_B_adult_e01_t0  test_pool5_dataset_B_Adult  train_pool5_dataset_B_Adult
+0-iwak$
+
+0-iwak$ time ./svm-predict /tmp/giraudf/test_pool5_dataset_B_Adult /tmp/giraudf/model_B_adult_e01_t0 tmp_out_0
+Accuracy = 73.2176% (5063/6915) (classification)
+
+real    4m58.327s
+user    9m50.888s
+sys     0m0.559s
+
+*****************************************************************************************
+
+
+0-lhoste$ time ./svm-train -t 0 -e 0.01 /tmp/giraudf/train_pool5_B_adult /tmp/giraudf/model_B_adu
+lt_e001_t0
+..........................*.....................*
+optimization finished, #iter = 47060
+nu = 0.001341
+obj = -12.021094, rho = 1.278234
+nSV = 3423, nBSV = 7
+Total nSV = 3423
+
+real    16m31.567s
+user    32m40.723s
+sys     0m1.219s
+0-lhoste$
+
+0-lhoste$ time ./svm-predict /tmp/giraudf/test_pool5_B_adult /tmp/giraudf/model_B_adult_e001_t0 t
+mp_out_0
+Accuracy = 73.3044% (5069/6915) (classification)
+
+real    4m55.261s
+user    9m45.028s
+sys     0m0.411s
+
+*****************************************************************************************
+
+0-iwak$  time ./svm-train -t 1 -e 0.1 /tmp/giraudf/train_pool5_dataset_B_Adult /tmp/giraudf/mode
+l_B_adult_e01_t1
+..*...
+optimization finished, #iter = 5921
+nu = 0.001336
+obj = -12.002261, rho = 0.851742
+nSV = 6035, nBSV = 11
+Total nSV = 6035
+
+real    21m30.719s
+user    42m30.631s
+sys     0m2.338s
+0-iwak$ time ./svm-predict /tmp/giraudf/test_pool5_dataset_B_Adult /tmp/giraudf/model_B_adult_e01_t tmp_out_1
+model_B_adult_e01_t0  model_B_adult_e01_t1
+0-iwak$ time ./svm-predict /tmp/giraudf/test_pool5_dataset_B_Adult /tmp/giraudf/model_B_adult_e01_t tmp_out_1
+model_B_adult_e01_t0  model_B_adult_e01_t1
+0-iwak$ time ./svm-predict /tmp/giraudf/test_pool5_dataset_B_Adult /tmp/giraudf/model_B_adult_e01_t1 tmp_out_1
+Accuracy = 78.7852% (5448/6915) (classification)
+
+real    8m33.080s
+user    16m56.301s
+sys     0m0.848s
+0-iwak$
+
+**********************************************************************************************************
+0-iwak$  time ./svm-train -t 1 -e 0.01 /tmp/giraudf/train_pool5_dataset_B_Adult /tmp/giraudf/mod
+el_B_adult_e001_t1
+.....*....*
+optimization finished, #iter = 9123
+nu = 0.001336
+obj = -12.002261, rho = 0.826935
+nSV = 6264, nBSV = 11
+Total nSV = 6264
+
+real    32m23.114s
+user    64m13.237s
+sys     0m2.941s
+0-iwak$ time ./svm-predict /tmp/giraudf/test_pool5_dataset_B_Adult /tmp/giraudf/model_B_adult_e0 tmp_out_1
+model_B_adult_e001_t1  model_B_adult_e01_t0   model_B_adult_e01_t1
+0-iwak$ time ./svm-predict /tmp/giraudf/test_pool5_dataset_B_Adult /tmp/giraudf/model_B_adult_e001_t1 tmp_out_1
+Accuracy = 78.7419% (5445/6915) (classification)
+
+real    8m52.687s
+user    17m34.611s
+sys     0m1.184s
+0-iwak$
+
+**********************************************************************************************************
+
+0-lhoste$ time ./svm-train -t 2 -e 0.1 /tmp/giraudf/train_pool5_B_adult /tmp/giraudf/model_B_adult_e01_t2
+....
+WARNING: using -h 0 may be faster
+*......*
+optimization finished, #iter = 10187
+nu = 0.907796
+obj = -4351.322276, rho = 0.135930
+nSV = 8914, nBSV = 4029
+Total nSV = 8914
+
+real    31m26.547s
+user    62m11.212s
+sys     0m1.931s
+0-lhoste$ time ./svm-predict /tmp/giraudf/test_pool5_B_adult /tmp/giraudf/model_B_adult_e0 tmp_ou
+t_0
+model_B_adult_e001_t0  model_B_adult_e01_t2
+0-lhoste$ time ./svm-predict /tmp/giraudf/test_pool5_B_adult /tmp/giraudf/model_B_adult_e01_t2 tm
+p_out_0
+^[[CAccuracy = 80.8966% (5594/6915) (classification)
+
+real    13m48.594s
+user    27m22.540s
+sys     0m0.957s
+0-lhoste$
+
+**********************************************************************************************************
+
+0-lhoste$ time ./svm-train -t 2 -e 0.01 /tmp/giraudf/train_pool5_B_adult /tmp/giraudf/model_B_adu
+lt_e001_t2
+optimization finished, #iter = 14058
+nu = 0.907444
+obj = -4352.578725, rho = 0.135458
+nSV = 8933, nBSV = 4022
+Total nSV = 8933
+
+real    40m53.088s
+user    81m8.324s
+sys     0m2.121s
+0-lhoste$ time ./svm-predict /tmp/giraudf/test_pool5_B_adult /tmp/giraudf/model_B_adult_e001_t2 t
+mp_out_0
+Accuracy = 80.8966% (5594/6915) (classification)
+
+real    13m48.904s
+user    27m23.884s
+sys     0m0.798s
+0-lhoste$
+
+**********************************************************************************************************
+
+0-iwak$  time ./svm-train -t 3 -e 0.1 /tmp/giraudf/train_pool5_dataset_B_Adult /tmp/giraudf/mode
+l_B_adult_e01_t3
+....
+*
+optimization finished, #iter = 4118
+nu = 0.915284
+obj = -8448.011988, rho = 0.975249
+nSV = 8222, nBSV = 8222
+Total nSV = 8222
+
+real    16m12.884s
+user    31m51.230s
+sys     0m2.044s
+0-iwak$ time ./svm-predict /tmp/giraudf/test_pool5_dataset_B_Adult /tmp/giraudf/model_B_adult_e01_t3 tmp_out_1
+Accuracy = 74.0419% (5120/6915) (classification)
+
+real    11m39.209s
+user    23m4.318s
+sys     0m1.363s
+0-iwak$
+
+**********************************************************************************************************
+
+0-lhoste$ time ./svm-train -t 3 -e 0.01 /tmp/giraudf/train_pool5_B_adult /tmp/giraudf/model_B_adu
+lt_e001_t3
+*
+optimization finished, #iter = 4124
+nu = 0.915284
+obj = -8448.177436, rho = 0.998289
+nSV = 8222, nBSV = 8222
+Total nSV = 8222
+
+real    16m12.586s
+user    31m52.095s
+sys     0m1.445s
+0-lhoste$ time ./svm-predict /tmp/giraudf/test_pool5_B_adult /tmp/giraudf/model_B_adult_e001_t3 t
+mp_out_0
+Accuracy = 74.0419% (5120/6915) (classification)
+
+real    11m38.462s
+user    23m3.632s
+sys     0m0.804s
+0-lhoste$
+
+
+**********************************************************************************************************
+
+0-iwak$  time ./svm-train -s 1 -t 2 -e 0.1 /tmp/giraudf/train_pool5_dataset_B_Adult /tmp/giraudf
+/model_B_adult_e01_t2_s1
+........*
+optimization finished, #iter = 8558
+C = 1.948336
+obj = 4378.401889, rho = 0.074826
+nSV = 8878, nBSV = 15
+Total nSV = 8878
+
+real    37m6.307s
+user    73m32.983s
+sys     0m3.329s
+0-iwak$ time ./svm-predict /tmp/giraudf/test_pool5_dataset_B_Adult /tmp/giraudf/model_B_adult_e01_t2_s1 tmp_out_1
+Accuracy = 80.8966% (5594/6915) (classification)
+
+real    13m45.071s
+user    27m15.506s
+sys     0m1.215s
+0-iwak$
+
+**********************************************************************************************************
+

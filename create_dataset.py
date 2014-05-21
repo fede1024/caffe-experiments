@@ -20,6 +20,8 @@ if len(sys.argv) < 4:
 #KEEP_ONE = False
 KEEP_ONE = True
 
+BINARY_LABEL = "Adult"
+
 print "Opening labels file."
 
 f = open(sys.argv[1], "r")
@@ -54,11 +56,16 @@ with open(sys.argv[2]) as data_file:
         image_data = data_line[1:]
         if image_name not in images:
             continue
-        if KEEP_ONE:
-            image_labels = images[image_name]
+        image_labels = images[image_name]
+        if BINARY_LABEL:
+            if BINARY_LABEL in image_labels:
+                nums = ["1"]
+            else:
+                nums = ["2"]
+        elif KEEP_ONE:
             nums = [str(max([[label_number[l], labels[l]] for l in image_labels], key = lambda x: x[1])[0])]
         else:
-            nums = [str(label_number[l]) for l in images[image_name]]
+            nums = [str(label_number[l]) for l in image_labels]
         vals = ["%d:%s"%(n+1,v) for n, v in enumerate(image_data) if v != "0"]
         output_file.write(",".join(nums) + " " + " ".join(vals))
 
