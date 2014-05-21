@@ -12,13 +12,12 @@ if not os.path.exists(CAFFE):
 sys.path.append(CAFFE)
 
 from caffe import imagenet
-#from matplotlib import pyplot
 import time
 from os import listdir
 from os.path import isfile, join
 
-def list_files(path):
-    return [f for f in listdir(path) if isfile(join(path,f)) ]
+KEEP_RATIO = 0.1
+EXT = ".jpg"
 
 # Set the right path to your model file and pretrained model
 #MODEL_FILE = '/home/federico/tmp/caffe/examples/imagenet/imagenet_deploy.prototxt'
@@ -27,8 +26,8 @@ PRETRAINED = '/home/federico/tmp/caffe/examples/imagenet/caffe_reference_imagene
 
 MODE = 'cpu'
 
-if len(sys.argv) < 3:
-    sys.exit('Usage: %s layer_name1 layer_name2 ... input_folder output_folder' % sys.argv[0])
+if len(sys.argv) < 4:
+    sys.exit('Usage: %s layer_name1 layer_name2 ... annotation_file input_dir output_dir' % sys.argv[0])
 
 if not os.path.exists(MODEL_FILE):
     sys.exit('ERROR: Model file %s was not found!' % MODEL_FILE)
@@ -36,9 +35,13 @@ if not os.path.exists(MODEL_FILE):
 if not os.path.exists(PRETRAINED):
     sys.exit('ERROR: Trained network %s was not found!' % PRETRAINED)
 
-layers = sys.argv[1:-2]
+layers = sys.argv[1:-3]
+annotation = sys.argv[len(sys.argv)-3]
 input_folder = sys.argv[len(sys.argv)-2]
 output_folder = sys.argv[len(sys.argv)-1]
+
+if not os.path.isdir(output_folder):
+    sys.exit('ERROR: Input folder %s is not valid!' % input_folder)
 
 if not os.path.isdir(output_folder):
     sys.exit('ERROR: Output folder %s is not valid!' % output_folder)
@@ -59,9 +62,18 @@ if MODE == 'cpu':
 else:
     net.caffenet.set_mode_gpu()
 
-images = [join(input_folder, f) for f in list_files(input_folder)]
-images_num = len(images)
+images = {}
 
+with open(annotation_file, 'r') as file:
+    for line in file:
+        image_name, value = line.rstrip().split(" ")
+        if value == "S":
+            continue
+        image_path = join(input_folder, image_name + EXT)
+        if random.random() < KEEP_RATIO:
+            images[image_path] = 1 if value == "N" else 1
+
+print "Images:", len(images)
 print "Extracting data for layers %s:"%layers
 
 layer_files = {}
@@ -78,7 +90,7 @@ print "\nStarting image elaboration:"
 
 count = 1
 
-for image_path in images:
+for image_path in image.keys:
     image_name, ext = os.path.basename(image_path).split(".")
     sys.stdout.flush()
 
