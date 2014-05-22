@@ -1,71 +1,118 @@
 #!/usr/bin/python
 
-#
-# Usage:  ./create_dataset labels imagenet_data output_dataset
-#
-# Takes as input the file with all the labels in association with images in
-# python format (ar created with the combine_annotations.py script), and the
-# data extracted with the extract_values.py script. It outputs a file in libsvm
-# format.
-#
+from __future__ import division
+import sys, os
+import fileinput
 
-import sys
+CAFFE = '/home/federico/tmp/caffe/python'
+
+if not os.path.exists(CAFFE):
+    sys.exit('ERROR: Caffe library %s was not found!' % CAFFE)
+
+sys.path.append(CAFFE)
+
+from caffe import imagenet
+import time
+import random
+from os import listdir
+from os.path import isfile, join
+
+KEEP_RATIO = 0.1
+EXT = ".jpg"
+
+# Set the right path to your model file and pretrained model
+#MODEL_FILE = '/home/federico/tmp/caffe/examples/imagenet/imagenet_deploy.prototxt'
+MODEL_FILE = '/home/federico/tmp/caffe/examples/imagenet/imagenet_1image.prototxt'
+PRETRAINED = '/home/federico/tmp/caffe/examples/imagenet/caffe_reference_imagenet_model'
+
+MODE = 'cpu'
 
 if len(sys.argv) < 4:
-    print "Usage: %s labels imagenet_data output_dataset"%sys.argv[0]
-    sys.exit(1)
+    sys.exit('Usage: %s layer_name1 layer_name2 ... annotation_file input_dir output_dir' % sys.argv[0])
 
-# If true, it keeps only the most frequent lable among the database, giving a
-# single label per image.
-#KEEP_ONE = False
-KEEP_ONE = True
+if not os.path.exists(MODEL_FILE):
+    sys.exit('ERROR: Model file %s was not found!' % MODEL_FILE)
 
-BINARY_LABEL = "Adult"
+if not os.path.exists(PRETRAINED):
+    sys.exit('ERROR: Trained network %s was not found!' % PRETRAINED)
 
-print "Opening labels file."
+layers = sys.argv[1:-3]
+annotation_file = sys.argv[len(sys.argv)-3]
+input_folder = sys.argv[len(sys.argv)-2]
+output_folder = sys.argv[len(sys.argv)-1]
 
-f = open(sys.argv[1], "r")
-images = eval(f.read())
-f.close()
+if not os.path.isdir(input_folder):
+    sys.exit('ERROR: Input folder %s is not valid!' % input_folder)
 
-labels = {}
+if not os.path.isdir(output_folder):
+    sys.exit('ERROR: Output folder %s is not valid!' % output_folder)
 
-for image_labels in images.values():
-    for label in image_labels:
-        count = labels.get(label, 0)
-        labels[label] = count + 1
+print "Loading network..."
+start = time.time()
 
-label_number = {}
+# WARNING: using center_only allows faster image processing, but the input
+# dimension in the prototxt file must be 1 instead of 10
+#net = imagenet.ImageNetClassifier(MODEL_FILE, PRETRAINED)
+net = imagenet.ImageNetClassifier(MODEL_FILE, PRETRAINED, center_only=True)
+print "Network loaded in in %.2fs\n"%(time.time() - start)
 
-for n, l in enumerate(sorted(list(labels))):
-    label_number[l] = n+1 # Labels start from 1
+net.caffenet.set_phase_test()
 
-print "Writing dataset file."
+if MODE == 'cpu':
+    net.caffenet.set_mode_cpu()
+else:
+    net.caffenet.set_mode_gpu()
 
-output_file = open(sys.argv[3], "w+")
+images = {}
 
-count = 0
-
-with open(sys.argv[2]) as data_file:
-    for line in data_file:
-        count += 1
-        if count % 1000 == 0:
-            print "Image n:", count
-        data_line = line.split(" ")
-        image_name = data_line[0]
-        image_data = data_line[1:]
-        if image_name not in images:
+with open(annotation_file, 'r') as file:
+    for line in file:
+        image_name, value = line.rstrip().split(" ")
+        if value == "S":
             continue
-        image_labels = images[image_name]
-        if BINARY_LABEL:
-            if BINARY_LABEL in image_labels:
-                nums = ["1"]
-            else:
-                nums = ["2"]
-        elif KEEP_ONE:
-            nums = [str(max([[label_number[l], labels[l]] for l in image_labels], key = lambda x: x[1])[0])]
-        else:
-            nums = [str(label_number[l]) for l in image_labels]
-        vals = ["%d:%s"%(n+1,v) for n, v in enumerate(image_data) if v != "0"]
-        output_file.write(",".join(nums) + " " + " ".join(vals))
+        image_path = join(input_folder, image_name + EXT)
+        if isfile(image_path) and random.random() < KEEP_RATIO:
+            images[image_path] = 1 if value == "P" else 0
 
+images_num = len(images)
+
+print "Images:", images_num
+print "Extracting data for layers %s:"%layers
+
+layer_files = {}
+
+for layer in layers:
+    if layer in net.caffenet.blobs.keys():
+        print "  Layer %s dimensions:"%(layer), net.caffenet.blobs[layer].data.shape
+        layer_files[layer] = open(output_folder + "/" + layer, "w+")
+    else:
+        print "  Layer %s does not exist. Layers:"%(layer), net.caffenet.blobs.keys()
+        exit()
+
+print "\nStarting image elaboration:"
+
+count = 1
+
+for image_path in sorted(images.keys()):
+    image_name, ext = os.path.basename(image_path).split(".")
+
+    if not os.path.exists(image_path):
+        sys.exit('ERROR: Image %s was not found!' % image_path)
+
+    start = time.time()
+    prediction = net.predict(image_path)
+    print "%3d%%\tImage: %s     \t%.2fs        \r"%(count/images_num*100, image_name, time.time() - start),
+    sys.stdout.flush()
+
+    for layer in layers:
+        # TODO spiegare usare 4
+        numbers = net.caffenet.blobs[layer].data[0].flatten().tolist()
+        line = " ".join(["%d:%d"%(n+1,v) for n, v in enumerate(numbers) if v != 0])
+        layer_files[layer].write(str(images[image_path]) + " " + line + "\n")
+
+    count += 1
+
+for layer_file in layer_files.values():
+    layer_file.close()
+
+print "\nDONE"
