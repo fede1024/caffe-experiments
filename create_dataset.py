@@ -83,7 +83,8 @@ layer_files = {}
 
 for layer in layers:
     if layer in net.caffenet.blobs.keys():
-        print "  Layer %s dimensions:"%(layer), net.caffenet.blobs[layer].data.shape
+        shape = net.caffenet.blobs[layer].data.shape
+        print "  Layer %s dimensions: %s [%d values]"%(layer, shape, reduce(lambda x, y: x*y, shape))
         layer_files[layer] = open(output_folder + "/" + layer, "w+")
     else:
         print "  Layer %s does not exist. Layers:"%(layer), net.caffenet.blobs.keys()
