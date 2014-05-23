@@ -108,7 +108,8 @@ for image_path in sorted(images.keys()):
         # TODO spiegare usare 4
         numbers = net.caffenet.blobs[layer].data[0].flatten().tolist()
         line = " ".join(["%d:%d"%(n+1,v) for n, v in enumerate(numbers) if v != 0])
-        layer_files[layer].write(str(images[image_path]) + " " + line + "\n")
+        label = str(images[image_path])
+        layer_files[layer].write(label + " " + line + " # " + image_name + " " + label + "\n")
 
     count += 1
 
