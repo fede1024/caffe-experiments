@@ -2,30 +2,21 @@
 
 from __future__ import division
 import sys, os
-import fileinput
 
 CAFFE = '/home/federico/tmp/caffe/python'
-
-if not os.path.exists(CAFFE):
-    sys.exit('ERROR: Caffe library %s was not found!' % CAFFE)
-
-sys.path.append(CAFFE)
-
-from caffe import imagenet
-import time
-import random
-from os import listdir
-from os.path import isfile, join
-
-KEEP_RATIO = 0.1
-EXT = ".jpg"
-
 # Set the right path to your model file and pretrained model
 #MODEL_FILE = '/home/federico/tmp/caffe/examples/imagenet/imagenet_deploy.prototxt'
 MODEL_FILE = '/home/federico/tmp/caffe/examples/imagenet/imagenet_1image.prototxt'
 PRETRAINED = '/home/federico/tmp/caffe/examples/imagenet/caffe_reference_imagenet_model'
 
+KEEP_RATIO = 1
+EXT = ".jpg"
 MODE = 'cpu'
+
+if not os.path.exists(CAFFE):
+    sys.exit('ERROR: Caffe library %s was not found!' % CAFFE)
+
+sys.path.append(CAFFE)
 
 if len(sys.argv) < 4:
     sys.exit('Usage: %s layer_name1 layer_name2 ... annotation_file input_dir output_dir' % sys.argv[0])
@@ -35,6 +26,14 @@ if not os.path.exists(MODEL_FILE):
 
 if not os.path.exists(PRETRAINED):
     sys.exit('ERROR: Trained network %s was not found!' % PRETRAINED)
+
+import fileinput
+from caffe import imagenet
+import time
+import random
+from os import listdir
+from os.path import isfile, join
+
 
 layers = sys.argv[1:-3]
 annotation_file = sys.argv[len(sys.argv)-3]
