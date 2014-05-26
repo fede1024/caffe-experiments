@@ -22,16 +22,20 @@ def gen_ranking(data, k):
     for n, real, p0, p1 in data_s[:k]:
         if real == 1:
             relevant.add(n)    # is a relevant document
-        if p1 >= 0.5:
+        if p1 >= 0.2:
             ranking.append(n)  # is in ranking
 
     return ranking, relevant
 
+def APK(data, k):
+    ranking, relevants = gen_ranking(data, k)
+    return apk(relevants, ranking, k)
+
 def calc_classification(data, threshold=0.5):
     correct = 0
     for d in data:
-        value = 1 if d[2] > threshold else 0
-        if value == d[0]:
+        value = 1 if d[3] > threshold else 0
+        if value == d[1]:
             correct += 1
     return [correct, len(data), correct/len(data)*100]
 
@@ -41,8 +45,8 @@ def statistics(data, threshold=0.5):
     tn = 0
     fn = 0
     for d in data:
-        value = 1 if d[2] > threshold else 0
-        if value == d[0]:
+        value = 1 if d[3] > threshold else 0
+        if value == d[1]:
             if value == 1:
                 tp += 1
             else:
@@ -91,22 +95,4 @@ def apk(actual, predicted, k=10):
         return 1.0
 
     return score / min(len(actual), k)
-
-# BROKEN
-def AP(predicted, real, k=-1):
-    result = 0
-    tp = 0
-
-    if k < 0:
-        k = len(real)
-
-    for i in xrange(k):
-        if predicted[i] == real[i] and real[i] == 1:
-            tp += 1
-            result += tp/(i+1)
-
-    return result / min(k, tp)
-
-AP([1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1, 0, 0, 0, 1], k=10)
-AP([1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 1, 0, 0, 1, 1, 1, 0, 1, 1], k=10)
 

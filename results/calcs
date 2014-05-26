@@ -1,0 +1,221 @@
+>> Executing: ssh -x -t -t giraudf@eurecom10.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32.0  -g 0.0078125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom11.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.5  -g 0.0078125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom12.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32.0  -g 0.5  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom13.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.5  -g 0.5  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom14.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2048.0  -g 0.0078125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom15.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2048.0  -g 0.5  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom16.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32.0  -g 0.0001220703125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom17.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.5  -g 0.0001220703125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom18.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2048.0  -g 0.0001220703125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom19.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.125  -g 0.0078125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom20.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.125  -g 0.5  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom22.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.125  -g 0.0001220703125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom23.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32.0  -g 2.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom24.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.5  -g 2.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom25.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2048.0  -g 2.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom26.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.125  -g 2.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom27.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 512.0  -g 0.0078125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom28.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 512.0  -g 0.5  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom29.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 512.0  -g 0.0001220703125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom27.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 512.0  -g 2.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom27.eurecom.fr] 9 -7 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom17.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32.0  -g 0.00048828125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom17.eurecom.fr] -1 -13 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom16.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.5  -g 0.00048828125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom16.eurecom.fr] 5 -13 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom26.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2048.0  -g 0.00048828125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom26.eurecom.fr] -3 1 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom29.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.125  -g 0.00048828125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom29.eurecom.fr] 9 -13 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom23.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 512.0  -g 0.00048828125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom23.eurecom.fr] 5 1 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom24.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8.0  -g 0.0078125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom24.eurecom.fr] -1 1 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom25.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8.0  -g 0.5  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom25.eurecom.fr] 11 1 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom20.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8.0  -g 0.0001220703125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom20.eurecom.fr] -3 -1 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom22.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8.0  -g 2.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom22.eurecom.fr] -3 -13 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom14.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8.0  -g 0.00048828125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom14.eurecom.fr] 11 -7 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom13.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32.0  -g 0.03125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom13.eurecom.fr] -1 -1 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom18.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.5  -g 0.03125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom18.eurecom.fr] 11 -13 78.9531 (best c=512.0, g=0.0078125, rate=78.9531)>> Executing: ssh -x -t -t giraudf@eurecom19.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2048.0  -g 0.03125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+
+[giraudf@eurecom19.eurecom.fr] -3 -7 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom12.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.125  -g 0.03125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom12.eurecom.fr] 5 -1 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom15.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 512.0  -g 0.03125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom15.eurecom.fr] 11 -1 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom28.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8.0  -g 0.03125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom28.eurecom.fr] 9 -1 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom10.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32768.0  -g 0.0078125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom10.eurecom.fr] 5 -7 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)>> Executing: ssh -x -t -t giraudf@eurecom11.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32768.0  -g 0.5  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+
+[giraudf@eurecom11.eurecom.fr] -1 -7 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom27.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32768.0  -g 0.0001220703125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom27.eurecom.fr] 9 1 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom17.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32768.0  -g 2.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+ [giraudf@eurecom17.eurecom.fr] 5 -11 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom16.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32768.0  -g 0.00048828125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom16.eurecom.fr] -1 -11 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+>> Executing: ssh -x -t -t giraudf@eurecom29.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32768.0  -g 0.03125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom29.eurecom.fr] -3 -11 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+[giraudf@eurecom26.eurecom.fr] 11 -11 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom26.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32.0  -g 3.0517578125e-05  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom24.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.5  -g 3.0517578125e-05  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom24.eurecom.fr] 3 -7 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+>> Executing: ssh -x -t -t giraudf@eurecom23.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2048.0  -g 3.0517578125e-05  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom23.eurecom.fr] 9 -11 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+[giraudf@eurecom25.eurecom.fr] 3 -1 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom25.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.125  -g 3.0517578125e-05  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom20.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 512.0  -g 3.0517578125e-05  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom20.eurecom.fr] 3 -13 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom18.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8.0  -g 3.0517578125e-05  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom18.eurecom.fr] -1 -5 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+>> Executing: ssh -x -t -t giraudf@eurecom22.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32768.0  -g 3.0517578125e-05  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom22.eurecom.fr] 3 1 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+[giraudf@eurecom14.eurecom.fr] 3 -11 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom14.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.03125  -g 0.0078125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom19.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.03125  -g 0.5  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom19.eurecom.fr] 11 -5 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+>> Executing: ssh -x -t -t giraudf@eurecom13.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.03125  -g 0.0001220703125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom13.eurecom.fr] 5 -5 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+>> Executing: ssh -x -t -t giraudf@eurecom12.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.03125  -g 2.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom12.eurecom.fr] -3 -5 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+>> Executing: ssh -x -t -t giraudf@eurecom15.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.03125  -g 0.00048828125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom15.eurecom.fr] 9 -5 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+[giraudf@eurecom28.eurecom.fr] 3 -5 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom28.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.03125  -g 0.03125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom10.eurecom.fr] 15 -7 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom10.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.03125  -g 3.0517578125e-05  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom11.eurecom.fr] 15 -1 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom11.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32.0  -g 8.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom27.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.5  -g 8.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom27.eurecom.fr] 15 -13 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom16.eurecom.fr] 15 -11 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom16.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2048.0  -g 8.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom29.eurecom.fr] 15 -5 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom29.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.125  -g 8.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom17.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 512.0  -g 8.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom17.eurecom.fr] 15 1 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+>> Executing: ssh -x -t -t giraudf@eurecom24.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8.0  -g 8.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom24.eurecom.fr] -1 -15 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+>> Executing: [giraudf@eurecom26.eurecom.fr] 5 -15 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom26.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32768.0  -g 8.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom23.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.03125  -g 8.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom23.eurecom.fr] 11 -15 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+>> Executing: ssh -x -t -t giraudf@eurecom25.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 128.0  -g 0.0078125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom25.eurecom.fr] -3 -15 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+[giraudf@eurecom20.eurecom.fr] 9 -15 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom20.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 128.0  -g 0.5  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom18.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 128.0  -g 0.0001220703125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom18.eurecom.fr] 3 -15 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+>> Executing: ssh -x -t -t giraudf@eurecom22.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 128.0  -g 2.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom22.eurecom.fr] 15 -15 78.9531 (best c=0.125, g=0.0078125, rate=78.9531)
+
+[giraudf@eurecom14.eurecom.fr] -5 -7 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom14.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 128.0  -g 0.00048828125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom19.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 128.0  -g 0.03125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom19.eurecom.fr] -5 -1 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+
+>> Executing: [giraudf@eurecom13.eurecom.fr] -5 -13 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom13.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 128.0  -g 3.0517578125e-05  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom12.eurecom.fr] -5 1 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom12.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 128.0  -g 8.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom15.eurecom.fr] -5 -11 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom15.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32.0  -g 0.001953125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom28.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.5  -g 0.001953125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom28.eurecom.fr] -5 -5 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+
+>> Executing: [giraudf@eurecom10.eurecom.fr] -5 -15 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom10.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2048.0  -g 0.001953125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom11.eurecom.fr] 5 3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom11.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.125  -g 0.001953125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom27.eurecom.fr] -1 3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom27.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 512.0  -g 0.001953125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom24.eurecom.fr] 3 3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom24.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8.0  -g 0.001953125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom29.eurecom.fr] -3 3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom29.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32768.0  -g 0.001953125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom17.eurecom.fr] 9 3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom17.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.03125  -g 0.001953125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom16.eurecom.fr] 11 3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom16.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 128.0  -g 0.001953125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom26.eurecom.fr] 15 3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom26.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2.0  -g 0.0078125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom23.eurecom.fr] -5 3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom23.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2.0  -g 0.5  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom20.eurecom.fr] 7 -1 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom20.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2.0  -g 0.0001220703125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom25.eurecom.fr] 7 -7 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom25.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2.0  -g 2.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom18.eurecom.fr] 7 -13 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom18.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2.0  -g 0.00048828125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom22.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2.0  -g 0.03125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom22.eurecom.fr] 7 1 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+
+>> Executing: [giraudf@eurecom14.eurecom.fr] 7 -11 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom14.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2.0  -g 3.0517578125e-05  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom19.eurecom.fr] 7 -5 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom19.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2.0  -g 8.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom13.eurecom.fr] 7 -15 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom13.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2.0  -g 0.001953125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom12.eurecom.fr] 7 3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom12.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32.0  -g 0.125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom10.eurecom.fr] 11 -9 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom10.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.5  -g 0.125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom15.eurecom.fr] 5 -9 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom15.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2048.0  -g 0.125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom28.eurecom.fr] -1 -9 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom28.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.125  -g 0.125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom11.eurecom.fr] -3 -9 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom11.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 512.0  -g 0.125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom27.eurecom.fr] 9 -9 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom27.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8.0  -g 0.125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom24.eurecom.fr] 3 -9 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom24.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 32768.0  -g 0.125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom17.eurecom.fr] -5 -9 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom17.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 0.03125  -g 0.125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom29.eurecom.fr] 15 -9 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom29.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 128.0  -g 0.125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom16.eurecom.fr] 7 -9 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom16.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 2.0  -g 0.125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom26.eurecom.fr] 1 -7 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom26.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8192.0  -g 0.0078125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom23.eurecom.fr] 1 -1 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom23.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8192.0  -g 0.5  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: ssh -x -t -t giraudf@eurecom20.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8192.0  -g 0.0001220703125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom20.eurecom.fr] 1 -13 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+>> Executing: ssh -x -t -t giraudf@eurecom25.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8192.0  -g 2.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom25.eurecom.fr] 1 1 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+
+>> Executing: ssh -x -t -t giraudf@eurecom18.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8192.0  -g 0.00048828125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "[giraudf@eurecom18.eurecom.fr] 1 -11 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+
+>> Executing: [giraudf@eurecom22.eurecom.fr] 1 -5 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom22.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8192.0  -g 0.03125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom14.eurecom.fr] 1 -15 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom14.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8192.0  -g 3.0517578125e-05  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+>> Executing: [giraudf@eurecom19.eurecom.fr] 1 3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ssh -x -t -t giraudf@eurecom19.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8192.0  -g 8.0  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom13.eurecom.fr] 1 -9 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom13.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8192.0  -g 0.001953125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom12.eurecom.fr] 5 -3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+ >> Executing: ssh -x -t -t giraudf@eurecom12.eurecom.fr "cd /homes/giraudf/plibsvm-3.18; tools/../svm-train -c 8192.0  -g 0.125  -v 5 -t 0 /tmp/giraudf/tr_pool5_adult01 "
+[giraudf@eurecom10.eurecom.fr] -1 -3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom15.eurecom.fr] 11 -3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom28.eurecom.fr] -3 -3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom11.eurecom.fr] 9 -3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom27.eurecom.fr] 3 -3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom24.eurecom.fr] 15 -3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom17.eurecom.fr] -5 -3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom29.eurecom.fr] 7 -3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom16.eurecom.fr] 1 -3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom26.eurecom.fr] 13 -7 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom23.eurecom.fr] 13 -1 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom20.eurecom.fr] 13 -13 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom25.eurecom.fr] 13 1 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom18.eurecom.fr] 13 -11 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom22.eurecom.fr] 13 -5 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom14.eurecom.fr] 13 -15 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom19.eurecom.fr] 13 3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom13.eurecom.fr] 13 -9 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+[giraudf@eurecom12.eurecom.fr] 13 -3 78.9531 (best c=0.03125, g=0.0078125, rate=78.9531)
+0.03125 0.0078125 78.9531
