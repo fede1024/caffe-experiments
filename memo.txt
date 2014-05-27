@@ -1,3 +1,15 @@
+Layer norm1 dimensions: (1, 96, 27, 27) [69984 values]
+Layer norm2 dimensions: (1, 256, 13, 13) [43264 values]
+Layer conv3 dimensions: (1, 384, 13, 13) [64896 values]
+Layer conv4 dimensions: (1, 384, 13, 13) [64896 values]
+Layer pool5 dimensions: (1, 256, 6, 6) [9216 values]
+Layer conv5 dimensions: (1, 256, 13, 13) [43264 values]
+Layer fc7 dimensions: (1, 4096, 1, 1) [4096 values]
+Layer fc6 dimensions: (1, 4096, 1, 1) [4096 values]
+Layer fc8 dimensions: (1, 1000, 1, 1) [1000 values]
+Layer prob dimensions: (1, 1000, 1, 1) [1000 values]
+
+
 ./plibsvm-3.18/svm-train data/abc_reduced/test_pool5_dataset data/abc_reduced/module_default
 # one day
 fede@tesla:~/project$ time ./plibsvm-3.18/svm-predict data/abc_reduced/test_pool5_dataset data/abc_reduced/module_default tmp_output

@@ -107,7 +107,7 @@ for image_path in sorted(images.keys()):
     for layer in layers:
         # TODO spiegare usare 4
         numbers = net.caffenet.blobs[layer].data[0].flatten().tolist()
-        line = " ".join(["%d:%d"%(n+1,v) for n, v in enumerate(numbers) if v != 0])
+        line = " ".join(["%d:%.2f"%(n+1,v) for n, v in enumerate(numbers) if v != 0])
         label = str(images[image_path])
         layer_files[layer].write(label + " " + line + " # " + image_name + " " + label + "\n")
 
