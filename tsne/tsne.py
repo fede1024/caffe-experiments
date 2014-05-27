@@ -10,6 +10,9 @@
 #  Created by Laurens van der Maaten on 20-12-08.
 #  Copyright (c) 2008 Tilburg University. All rights reserved.
 
+# Modified by Federico Giraud, Eurecom, Sophia Antipolis, France
+
+import sys
 import numpy as Math
 import pylab as Plot
 from mpl_toolkits.mplot3d import Axes3D
@@ -20,6 +23,8 @@ def Hbeta(D = Math.array([]), beta = 1.0):
     # Compute P-row and corresponding perplexity
     P = Math.exp(-D.copy() * beta);
     sumP = sum(P);
+    if sumP == 0:
+        sumP = 0.1
     H = Math.log(sumP) + beta * Math.sum(D * P) / sumP;
     P = P / sumP;
     return H, P;
@@ -39,7 +44,6 @@ def x2p(X = Math.array([]), tol = 1e-5, perplexity = 30.0):
 
     # Loop over all datapoints
     for i in range(n):
-
         # Print progress
         if i % 500 == 0:
             print "Computing P-values for point ", i, " of ", n, "..."
@@ -49,6 +53,7 @@ def x2p(X = Math.array([]), tol = 1e-5, perplexity = 30.0):
         betamax =  Math.inf;
         Di = D[i, Math.concatenate((Math.r_[0:i], Math.r_[i+1:n]))];
         (H, thisP) = Hbeta(Di, beta[i]);
+        # BOH
 
         # Evaluate whether the perplexity is within tolerance
         Hdiff = H - logU;
@@ -74,6 +79,7 @@ def x2p(X = Math.array([]), tol = 1e-5, perplexity = 30.0):
             Hdiff = H - logU;
             tries = tries + 1;
 
+        #print thisP
         # Set the final row of P
         P[i, Math.concatenate((Math.r_[0:i], Math.r_[i+1:n]))] = thisP;
 
@@ -111,7 +117,7 @@ def tsne(X = Math.array([]), no_dims = 2, PCA_dims = None, perplexity = 30.0, ma
 
     # Initialize variables
     if PCA_dims:
-        X = pca(X, initial_dims);
+        X = pca(X, PCA_dims);
     (n, d) = X.shape;
     #max_iter = 100;
     initial_momentum = 0.5;
@@ -169,20 +175,21 @@ def tsne(X = Math.array([]), no_dims = 2, PCA_dims = None, perplexity = 30.0, ma
     return Y;
 
 
-if __name__ == "__main__":
+if __name__ == "NOOO__main__":
     #print "Run Y = tsne.tsne(X, no_dims, perplexity) to perform t-SNE on your dataset."
     #print "Running example on 2,500 MNIST digits..."
     #X = Math.loadtxt("mnist2500_X.txt");
     #labels = Math.loadtxt("mnist2500_labels.txt");
     print "Loading file"
-    X1 = Math.loadtxt("all_14/imagenet_features");
+    X1 = Math.loadtxt("../features_test")
+    #X1 = Math.loadtxt("300_14/imagenet_features");
     #labels = Math.loadtxt("400_14/imagenet_labels");
     #X = Math.array([[n/100 for n in x] for x in X1[0:1705]])
     print "Resizing values"
     X = X1/100
     #Y = tsne(X, 2, 50, 20.0);
     print "Running tsne"
-    Y = tsne(X, 2, perplexity=20.0, max_iter=400);
+    Y = tsne(X[:100], 2, perplexity=20.0, max_iter=400)
     #labels = Math.array([Math.float64(1)]*386 + [Math.float64(2)]*1079 + [Math.float64(3)]*240 + [Math.float64(4)]*1226)
     #fig = Plot.figure()
     #ax = fig.add_subplot(111, projection='3d')
@@ -194,5 +201,43 @@ if __name__ == "__main__":
     Plot.scatter(Y[:,0][386:1465], Y[:,1][386:1465], 20, color='r', label="cat", alpha=0.5);
     Plot.scatter(Y[:,0][1465:1705], Y[:,1][1465:1705], 20, color='g', label="bird", alpha=0.5);
     Plot.scatter(Y[:,0][1705:2931], Y[:,1][1705:2931], 20, color='y', label="lamp", alpha=0.5);
+    Plot.legend(loc=0, scatterpoints = 1)
+    Plot.show()
+
+if __name__ == "__main__":
+    print "Loading file"
+    positives = []
+    negatives = []
+    with open(sys.argv[1]) as input:
+        for line in input:
+            eol = line.find("#")
+            if eol > 0:
+                line = line[:eol]
+            words = line.rstrip().split(" ")
+            values = [0] * int(sys.argv[2])
+            for w in words[1:]:
+                d = w.split(":")
+                values[int(d[0])-1] = float(d[1])
+            if words[0] == "0":
+                negatives.append(values)
+            else:
+                positives.append(values)
+    positives = positives[:400]
+    negatives = negatives[:400]
+    n_pos = len(positives)
+    n_neg = len(negatives)
+    X = Math.array(positives + negatives, dtype=Math.float64)
+    print "Resizing values"
+    print "Running tsne"
+    Y = tsne(X, 2, perplexity=20.0, max_iter=400)
+    #labels = Math.array([Math.float64(1)]*386 + [Math.float64(2)]*1079 + [Math.float64(3)]*240 + [Math.float64(4)]*1226)
+    #fig = Plot.figure()
+    #ax = fig.add_subplot(111, projection='3d')
+    #ax.scatter(Y[:,0][0:99], Y[:,1][0:99], Y[:,2][0:99], color='b', label="dog");
+    #ax.scatter(Y[:,0][99:189], Y[:,1][99:189], Y[:,2][99:189], color='r', label="cat");
+    #ax.scatter(Y[:,0][189:297], Y[:,1][189:297], Y[:,2][189:297], color='g', label="bird");
+    labels = Math.array([Math.float64(1)]*n_pos + [Math.float64(2)]*n_neg)
+    Plot.scatter(Y[:,0][0:n_pos], Y[:,1][0:n_pos], 20, color='r', label="Positive", alpha=0.5);
+    Plot.scatter(Y[:,0][n_pos:n_pos+n_neg], Y[:,1][n_pos:n_pos+n_neg], 20, color='b', label="Negative", alpha=0.5);
     Plot.legend(loc=0, scatterpoints = 1)
     Plot.show()
