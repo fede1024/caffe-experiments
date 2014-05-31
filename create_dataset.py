@@ -9,7 +9,7 @@ CAFFE = '/home/federico/tmp/caffe/python'
 MODEL_FILE = '/home/federico/tmp/caffe/examples/imagenet/imagenet_1image.prototxt'
 PRETRAINED = '/home/federico/tmp/caffe/examples/imagenet/caffe_reference_imagenet_model'
 
-KEEP_RATIO = 1
+KEEP_RATIO = 0.2
 EXT = ".jpg"
 MODE = 'cpu'
 
