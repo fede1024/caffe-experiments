@@ -9,7 +9,7 @@ CAFFE = '/home/federico/tmp/caffe/python'
 MODEL_FILE = '/home/federico/tmp/caffe/examples/imagenet/imagenet_1image.prototxt'
 PRETRAINED = '/home/federico/tmp/caffe/examples/imagenet/caffe_reference_imagenet_model'
 
-KEEP_RATIO = 0.2
+KEEP_RATIO = 1
 EXT = ".jpg"
 MODE = 'cpu'
 
@@ -70,7 +70,8 @@ with open(annotation_file, 'r') as file:
         if value == "S":
             continue
         image_path = join(input_folder, image_name + EXT)
-        if isfile(image_path) and random.random() < KEEP_RATIO:
+        #if isfile(image_path) and random.random() < KEEP_RATIO:
+        if isfile(image_path) and (random.random() < KEEP_RATIO or value == "P"):
             images[image_path] = 1 if value == "P" else 0
 
 images_num = len(images)
