@@ -129,7 +129,7 @@ plt.show()
 #vis_square(filters[:48].reshape(48**2, 5, 5))
 #plt.show()
 
-filters = net.caffenet.blobs['conv5'].data[image_no, :255]
+filters = net.caffenet.blobs['conv5'].data[image_no, 50:114]
 vis_square(filters, padval=1)
 plt.show()
 
@@ -153,4 +153,7 @@ showimage(v)
 plt.show()
 
 showimage(net.caffenet.blobs['conv5'].data[image_no][240])
+plt.show()
+
+showimage(net.caffenet.blobs['pool5'].data[image_no][240])
 plt.show()
